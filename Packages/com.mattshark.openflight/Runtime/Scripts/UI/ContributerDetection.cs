@@ -10,12 +10,22 @@ using VRC.Udon;
 
 namespace OpenFlightVRC.UI
 {
+	/// <summary>
+	/// Handles detecting if players are contributers or not
+	/// </summary>
 	[UdonBehaviourSyncMode(BehaviourSyncMode.None)]
 	public class ContributerDetection : LoggableUdonSharpBehaviour
 	{
 		public AvatarListLoader AvatarListLoader;
+		/// <summary>
+		/// Will be true if there is at least one contributer in the instance
+		/// </summary>
+		[ReadOnlyInspector]
 		public bool contributerInWorld = false;
 		private bool _localPlayerIsContributer = false;
+		/// <summary>
+		/// If the local player is a contributer
+		/// </summary>
 		public bool localPlayerIsContributer
 		{
 			get
@@ -33,6 +43,7 @@ namespace OpenFlightVRC.UI
 		/// <summary>
 		/// A formatted list of all the openflight contributers
 		/// </summary>
+		[ReadOnlyInspector]
 		public string contributersString = "";
 
 		private DataList _contributers = new DataList();
@@ -41,7 +52,7 @@ namespace OpenFlightVRC.UI
 		void Start()
 		{
 			//subscribe to the avatar list loader callback
-			AvatarListLoader.AddCallback(this, "GetContributersList");
+			AvatarListLoader.AddCallback(AvatarListLoaderCallback.AvatarListLoaded, this, nameof(GetContributersList));
 		}
 
 		public void GetContributersList()
@@ -82,7 +93,7 @@ namespace OpenFlightVRC.UI
 			if (_contributers.Contains(player.displayName) && contributerInWorld)
 			{
 				Logger.Log("Player that left was a contributer! Checking for remaining contributers...", this);
-				_contributersInWorld.Remove(player.displayName);
+				_contributersInWorld.RemoveAll(player.displayName);
 
 				//check if there are any contributers left
 				if (_contributersInWorld.Count == 0)

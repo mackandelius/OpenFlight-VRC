@@ -8,7 +8,7 @@
     content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
   <meta name="description" content="Public Documentation for the OpenFlight system">
   <title>OpenFlight Docs</title>
-  <link rel="icon" type="image/x-icon" href="icon.png">
+  <link rel="icon" type="image/x-icon" href="icon_square.png">
 
   <!-- Themes (light + dark) -->
   <link rel="stylesheet" media="(prefers-color-scheme: dark)"
@@ -38,11 +38,8 @@
           methods: {
             formatDate() {
               date = new Date();
-              day = date.getDate();
-              month = date.getMonth() + 1;
-              year = date.getFullYear();
 
-              return `${year}-${month}-${day}`;
+              return date.toISOString().split('T')[0];
             }
           },
         }

@@ -4,18 +4,25 @@
 
 using UdonSharp;
 using UnityEngine.UI;
+using UnityEngine;
+using TMPro;
 
 namespace OpenFlightVRC.UI
 {
+	/// <summary>
+	/// A utility for the slider to get and set values from a UdonBehaviour variable
+	/// </summary>
 	[UdonBehaviourSyncMode(BehaviourSyncMode.None)]
 	public class UISliderUtility : UIBase
 	{
 		private Slider _slider;
+		private InputField _inputField;
 
 		void Start()
 		{
 			InitializeTargetInfo();
 			_slider = GetComponent<Slider>();
+			_inputField = GetComponentInChildren<InputField>();
 		}
 
 		void Update()
@@ -68,6 +75,18 @@ namespace OpenFlightVRC.UI
 				default:
 					Logger.Log("Unknown type: " + targetType.ToString(), this);
 					break;
+			}
+
+			// Update the input field. This is done as the slider will automatically bound the value to the min and max values
+			_inputField.text = value.ToString();
+		}
+
+		public void PreciseInputChanged()
+		{
+			if (float.TryParse(_inputField.text, out float value))
+			{
+				_slider.value = value;
+				Changed();
 			}
 		}
 	}
