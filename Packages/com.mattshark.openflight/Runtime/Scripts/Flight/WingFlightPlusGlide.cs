@@ -15,11 +15,12 @@ namespace OpenFlightVRC
 #if !COMPILER_UDONSHARP && UNITY_EDITOR // These using statements must be wrapped in this check to prevent issues on builds
 	using UnityEditor;
 	using UdonSharpEditor;
+    using UnityEngine.Assertions.Must;
 #endif
 
-	// This is a custom inspector for the WingFlightPlusGlide script. It currently just adds a reset to defaults button
+    // This is a custom inspector for the WingFlightPlusGlide script. It currently just adds a reset to defaults button
 #if !COMPILER_UDONSHARP && UNITY_EDITOR
-	[CustomEditor(typeof(WingFlightPlusGlide))]
+    [CustomEditor(typeof(WingFlightPlusGlide))]
 	public class WingFlightPlusGlideEditor : Editor
 	{
 		public override void OnInspectorGUI()
@@ -229,9 +230,28 @@ namespace OpenFlightVRC
 		/// <summary> If true, the player is currently in the process of flapping. </summary>
 		public bool isFlapping = false; // Doing the arm motion
 
+		public Net.AvatarContacts AviContact;
+
+		[FieldChangeCallback(nameof(isFlying))]
+		private bool _isFlying = false;
+
 		[HideInInspector]
 		/// <summary> If true, the player is currently flying. </summary>
-		public bool isFlying = false; // Currently in the air after/during a flap
+		public bool isFlying // Currently in the air after/during a flap
+		{
+			get { return _isFlying; }
+			set
+			{
+				if (value == _isFlying)
+				{
+					return;
+				}
+				_isFlying = value;
+
+				//forward the event to the AvatarContacts handler
+				AviContact.OnFlyingChanged(_isFlying);
+			}
+		}
 
 		[HideInInspector]
 		/// <summary> If true, the player is currently gliding. </summary>

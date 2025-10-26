@@ -15,9 +15,10 @@ MonoBehaviour:
   serializedUdonProgramAsset: {fileID: 11400000, guid: bb19fc6193845c94684afee108cf79ed,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    \r\n    __message_0: %SystemObject, null\r\n   
-    __min_0: %SystemSingle, null\r\n    __max_0: %SystemSingle, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
-    .export _start\r\n    \r\n    _start:\r\n    \r\n        PUSH, __min_0\r\n       
-    PUSH, __max_0\r\n        PUSH, __message_0\r\n        EXTERN, \"UnityEngineRandom.__Range__SystemSingle_SystemSingle__SystemSingle\"\r\n       
+    __minInclusive_0: %SystemSingle, null\r\n    __maxInclusive_0: %SystemSingle,
+    null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _start\r\n    \r\n   
+    _start:\r\n    \r\n        PUSH, __minInclusive_0\r\n        PUSH, __maxInclusive_0\r\n       
+    PUSH, __message_0\r\n        EXTERN, \"UnityEngineRandom.__Range__SystemSingle_SystemSingle__SystemSingle\"\r\n       
     PUSH, __message_0\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
     JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
