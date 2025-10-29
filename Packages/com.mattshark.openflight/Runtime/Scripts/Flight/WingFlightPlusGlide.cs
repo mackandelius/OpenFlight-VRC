@@ -16,6 +16,7 @@ namespace OpenFlightVRC
 	using UnityEditor;
 	using UdonSharpEditor;
     using UnityEngine.Assertions.Must;
+    using BestHTTP.SecureProtocol.Org.BouncyCastle.Asn1.Mozilla;
 #endif
 
     // This is a custom inspector for the WingFlightPlusGlide script. It currently just adds a reset to defaults button
@@ -189,6 +190,12 @@ namespace OpenFlightVRC
 		[Header("Helper property (Do not touch, unless empty, then set to empty game object)")]
 		[Tooltip("Do not remove, if empty add the 'Load Bearing' game object, script will fail at runtime without this setup.")]
 		public Transform loadBearingTransform; //Transforms cannot be created, they can only be gotten from game objects, it isn't possible to create either in code.
+
+		/// <summary>
+		/// Udon behavior handling the contact system, for telling an avatar it is flying and an avatar telling OpenFlight it can fly.
+		/// </summary>
+		[Tooltip("Has to link to the correct contact udon behavior for contact detection and sending to work.")]
+		public Contact.AvatarContacts AviContact;
 		#endregion
 		#endregion
 
@@ -229,8 +236,6 @@ namespace OpenFlightVRC
 		[HideInInspector]
 		/// <summary> If true, the player is currently in the process of flapping. </summary>
 		public bool isFlapping = false; // Doing the arm motion
-
-		public Net.AvatarContacts AviContact;
 
 		[FieldChangeCallback(nameof(isFlying))]
 		private bool _isFlying = false;

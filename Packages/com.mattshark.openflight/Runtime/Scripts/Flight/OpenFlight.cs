@@ -88,6 +88,11 @@ namespace OpenFlightVRC
 		public GameObject wingedFlight;
 
 		/// <summary>
+		/// 	The Desktop Flight game object, used to enable/disable the DesktopFlight script
+		/// </summary>
+		public GameObject desktopFlight;
+
+		/// <summary>
 		/// The AvatarDetection script, used to re-evaluate flight upon switching to auto
 		/// </summary>
 		public AvatarDetection avatarDetection;
@@ -114,7 +119,8 @@ namespace OpenFlightVRC
 						Logger.Log("Flight turned off", this);
 						break;
 					case FlightMode.Auto:
-						if (InVR())
+						//if (InVR())
+						if (true)
 						{
 							flightModeString = "Auto";
 							SwitchFlight(false);
@@ -132,7 +138,8 @@ namespace OpenFlightVRC
 						}
 						break;
 					case FlightMode.On:
-						if (InVR())
+						if (true)
+						//if (InVR())
 						{
 							flightModeString = "On";
 							SwitchFlight(true);
@@ -179,7 +186,8 @@ namespace OpenFlightVRC
 				}
 				else
 				{
-					if (InVR())
+					//if (InVR())
+					if (true)
 					{
 						flightAllowedString = "Inactive";
 					}
@@ -191,6 +199,12 @@ namespace OpenFlightVRC
 			}
 		}
 
+		/// <summary
+		/// Udon behavior handing HUD notification for telling if flight is possible or not.
+		/// </summary>
+		[Tooltip("Has to link to the correct contact udon behavior for contact detection and sending to work.")]
+		public Hud.HudHandler HudNotificationHandler;
+
 		[ReadOnlyInspector]
 		public string flightAllowedString = "";
 
@@ -201,7 +215,7 @@ namespace OpenFlightVRC
 		/// You REALLY should not turn this on. This is purely for testing purposes
 		/// </remarks>
 		[ReadOnlyInspector]
-		public bool ignoreVRCheck = false;
+		public bool ignoreVRCheck = true;
 
 		/// <summary>
 		/// Turns flight off
@@ -209,8 +223,16 @@ namespace OpenFlightVRC
 		/// <param name="value">If true, flight will be turned off</param>
 		private void SwitchFlight(bool value)
 		{
-			wingedFlight.SetActive(value);
-			flightAllowed = value;
+			if (InVR())
+			{
+				wingedFlight.SetActive(value);
+				flightAllowed = value;
+			}
+			else
+			{
+				desktopFlight.SetActive(value);
+				flightAllowed = value;
+			}
 		}
 
 		/// <summary>
@@ -231,6 +253,7 @@ namespace OpenFlightVRC
 			}
 
 			return _localPlayer.IsUserInVR() || ignoreVRCheck;
+			//return _localPlayer.IsUserInVR();
 		}
 
 		public void Start()
@@ -241,10 +264,10 @@ namespace OpenFlightVRC
 			flightAllowed = _flightAllowed;
 
 			_localPlayer = Networking.LocalPlayer;
-			if (!InVR())
-			{
-				FlightOff();
-			}
+			//if (!InVR())
+			//{
+			//	FlightOff();
+			//}
 
 			//apply flight mode
 			switch (flightMode)
@@ -272,6 +295,9 @@ namespace OpenFlightVRC
 		public void FlightOn()
 		{
 			flightMode = FlightMode.On;
+
+			// TODO Check whether it should even pop up here.
+			HudNotificationHandler.NotifyFlightCapable();
 		}
 
 		/// <summary>
@@ -280,6 +306,9 @@ namespace OpenFlightVRC
 		public void FlightOff()
 		{
 			flightMode = FlightMode.Off;
+
+			// TODO Check whether it should even pop up here.
+			HudNotificationHandler.NotifyNotFlightCapable();
 		}
 
 		/// <summary>
@@ -299,6 +328,8 @@ namespace OpenFlightVRC
 			if (flightMode == FlightMode.Auto)
 			{
 				SwitchFlight(true);
+
+				HudNotificationHandler.NotifyFlightCapable();
 			}
 		}
 
@@ -310,6 +341,8 @@ namespace OpenFlightVRC
 			if (flightMode == FlightMode.Auto)
 			{
 				SwitchFlight(false);
+
+				HudNotificationHandler.NotifyNotFlightCapable();
 			}
 		}
 	}
