@@ -76,9 +76,16 @@ namespace OpenFlightVRC
 
         public void Update()
         {
+            if (LocalPlayer.IsPlayerGrounded() && !pressDown)
+            {
+                LocalPlayer.SetGravityStrength(oldGravity);
+                isFlying = false;
+            }
+
             dt = Time.deltaTime;
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
+                isFlying = true;
                 glidesliding = true;
                 //holdPos = LocalPlayer.GetPosition().y;
 
@@ -93,6 +100,7 @@ namespace OpenFlightVRC
 
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
+                    isFlying = true;
                     pressDown = true;
                     faceDirection = LocalPlayer.GetTrackingData(VRCPlayerApi.TrackingDataType.Head).rotation;
                     currentVel = LocalPlayer.GetVelocity();
@@ -107,7 +115,8 @@ namespace OpenFlightVRC
                 }
                 else if ((Input.GetKey(KeyCode.Space) && pressDown) || glidesliding)
                 {
-                    LocalPlayer.SetGravityStrength(gravity);
+                    isFlying = true;
+                    //LocalPlayer.SetGravityStrength(gravity);
                     faceDirection = LocalPlayer.GetTrackingData(VRCPlayerApi.TrackingDataType.Head).rotation;
                     currentVel = LocalPlayer.GetVelocity();
                     if (!glidesliding)
