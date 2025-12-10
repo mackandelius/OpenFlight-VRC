@@ -26,11 +26,6 @@ namespace OpenFlightVRC.Contact
         public VRCContactSender Sender;
 
         /// <summary>
-        /// The transform of the game object that the sender is attached to
-        /// </summary>
-        public Transform ThisObject;
-
-        /// <summary>
         /// Stored value of whether the player is allowed to fly or not.
         /// </summary>
         private bool IsAllowedToFly;

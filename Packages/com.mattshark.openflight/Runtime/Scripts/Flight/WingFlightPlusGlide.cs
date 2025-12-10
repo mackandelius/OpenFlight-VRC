@@ -230,35 +230,6 @@ namespace OpenFlightVRC
 		/// </summary>
 		private bool handsOpposite = false;
 
-		[HideInInspector]
-		/// <summary> If true, the player is currently in the process of flapping. </summary>
-		public bool isFlapping = false; // Doing the arm motion
-
-		[FieldChangeCallback(nameof(isFlying))]
-		private bool _isFlying = false;
-
-		[HideInInspector]
-		/// <summary> If true, the player is currently flying. </summary>
-		public bool isFlying // Currently in the air after/during a flap
-		{
-			get { return _isFlying; }
-			set
-			{
-				if (value == _isFlying)
-				{
-					return;
-				}
-				_isFlying = value;
-
-				//forward the event to the AvatarContacts handler
-				FP.AviContact.OnFlyingChanged(_isFlying);
-			}
-		}
-
-		[HideInInspector]
-		/// <summary> If true, the player is currently gliding. </summary>
-		public bool isGliding = false; // Has arms out while flying
-
 		/// <summary>
 		/// If >0, disables flight then decreases itself by one
 		/// </summary>
@@ -328,15 +299,15 @@ namespace OpenFlightVRC
 		public void OnEnable()
 		{
 			timeTick = -20;
-			isFlapping = false;
-			isFlying = false;
-			isGliding = false;
+			FP.isFlapping = false;
+			FP.isFlying = false;
+			FP.isGliding = false;
 			spinningRightRound = false;
 		}
 
 		public void OnDisable()
 		{
-			if (isFlying)
+			if (FP.isFlying)
 			{
 				Land();
 			}
@@ -477,11 +448,11 @@ namespace OpenFlightVRC
 				Vector3.Distance(LocalPlayer.GetBonePosition(LeftHandBone), LocalPlayer.GetBonePosition(RightHandBone)) > (armspan / 3.3f * 2) + shoulderDistance
 			);
 
-			if (!isFlapping)
+			if (!FP.isFlapping)
 			{
 				// Check for the beginning of a flap
 				if (
-					(isFlying || handsOut)
+					(FP.isFlying || handsOut)
 					&& (FP.requireJump ? !LocalPlayer.IsPlayerGrounded() : true)
 					&& !FP.IsPlayerInStation()
 					&& RHPos.y < playerPos.y - LocalPlayer.GetBonePosition(RightUpperArmBone).y
@@ -489,14 +460,14 @@ namespace OpenFlightVRC
 					&& downThrust > 0.002f
 				)
 				{
-					isFlapping = true;
+					FP.isFlapping = true;
 					// TakeOff() will check !isFlying
 					TakeOff();
 				}
 			}
 
 			// This should not be an else. It can trigger the same tick as "if (!isFlapping)"
-			if (isFlapping)
+			if (FP.isFlapping)
 			{
 				FlapTick();
 			}
@@ -508,7 +479,7 @@ namespace OpenFlightVRC
 			}
 
 			// Flying starts when a player first flaps and ends when they become grounded
-			if (isFlying)
+			if (FP.isFlying)
 			{
 				FlyTick(fixedDeltaTime);
 			}
@@ -537,7 +508,7 @@ namespace OpenFlightVRC
 		private void FlyTick(float dt)
 		{
 			// Check if FlyTick should be skipped this tick
-			if (FP.IsMainMenuOpen() || ((!isFlapping) && LocalPlayer.IsPlayerGrounded()))
+			if (FP.IsMainMenuOpen() || ((!FP.isFlapping) && LocalPlayer.IsPlayerGrounded()))
 			{
 				Land();
 			}
@@ -551,14 +522,14 @@ namespace OpenFlightVRC
 
 				// Check for a gliding pose
 				// Verbose explanation: (Ensure you're not flapping) && (check for handsOut frame one, ignore handsOut afterwards) && Self Explanatory && Ditto
-				if ((!isFlapping) && (isGliding || handsOut) && handsOpposite && FP.canGlide)
+				if ((!FP.isFlapping) && (FP.isGliding || handsOut) && handsOpposite && FP.canGlide)
 				{
 					// Currently, glideDelay is being disabled to alleviate a VRChat issue where avatars may spazz out while moving at high velocities.
 					// However, this may reintroduce an old bug so we're keeping this here.
 					// If gliding is suddenly causing you to bank up and down rapidly, uncomment this:
 					// if (LocalPlayer.GetVelocity().y > -1f && (!isGliding)) {glideDelay = 3;}
 
-					isGliding = true;
+					FP.isGliding = true;
 					newVelocity = setFinalVelocity ? finalVelocity : LocalPlayer.GetVelocity();
 
 					if (glideDelay <= 1)
@@ -617,7 +588,7 @@ namespace OpenFlightVRC
 				}
 				else // Not in a gliding pose?
 				{
-					isGliding = false;
+					FP.isGliding = false;
 					rotSpeedGoal = 0;
 					glideDelay = 0;
 				}
@@ -667,7 +638,7 @@ namespace OpenFlightVRC
 					finalVelocity = Vector3.zero;
 					setFinalVelocity = true;
 				}
-				isFlapping = false;
+				FP.isFlapping = false;
 			}
 		}
 
@@ -695,9 +666,9 @@ Glide Delay: {6}
 --Player Controller State--
 Grounded: {7}
 Velocity: {8}",
-							isFlying,
-							isFlapping,
-							isGliding,
+							FP.isFlying,
+							FP.isFlapping,
+							FP.isGliding,
 							handsOut,
 							downThrust,
 							cannotFlyTick > 0,
@@ -760,9 +731,9 @@ Velocity: {8}",
 		/// </summary>
 		public void TakeOff()
 		{
-			if (!isFlying)
+			if (!FP.isFlying)
 			{
-				isFlying = true;
+				FP.isFlying = true;
 				if (FP.dynamicPlayerPhysics)
 				{
 					oldGravityStrength = LocalPlayer.GetGravityStrength();
@@ -814,9 +785,9 @@ Velocity: {8}",
 		/// </summary>
 		public void Land()
 		{
-			isFlying = false;
-			isFlapping = false;
-			isGliding = false;
+			FP.isFlying = false;
+			FP.isFlapping = false;
+			FP.isGliding = false;
 			spinningRightRound = false;
 			rotSpeed = 0;
 			rotSpeedGoal = 0;

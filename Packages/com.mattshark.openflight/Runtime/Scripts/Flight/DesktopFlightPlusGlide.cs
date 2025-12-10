@@ -77,34 +77,34 @@ namespace OpenFlightVRC
 		private Quaternion RHRot;
 		private Quaternion LHRot;
 
-		[HideInInspector]
+		//[HideInInspector]
 		/// <summary> If true, the player is currently in the process of flapping. </summary>
-		public bool isFlapping = false; // Doing the arm motion
+		//public bool isFlapping = false; // Doing the arm motion
 
-		[FieldChangeCallback(nameof(isFlying))]
-		private bool _isFlying = false;
+		//[FieldChangeCallback(nameof(isFlying))]
+		//private bool _isFlying = false;
 
-		[HideInInspector]
+		//[HideInInspector]
 		/// <summary> If true, the player is currently flying. </summary>
-		public bool isFlying // Currently in the air after/during a flap
-		{
-			get { return _isFlying; }
-			set
-			{
-				if (value == _isFlying)
-				{
-					return;
-				}
-				_isFlying = value;
+		//public bool isFlying // Currently in the air after/during a flap
+		//{
+		//	get { return _isFlying; }
+		//	set
+		//	{
+		//		if (value == _isFlying)
+		//		{
+		//			return;
+		//		}
+		//		_isFlying = value;
 
 				//forward the event to the AvatarContacts handler
-				FP.AviContact.OnFlyingChanged(_isFlying);
-			}
-		}
+		//		FP.AviContact.OnFlyingChanged(_isFlying);
+		//	}
+		//}
 
-		[HideInInspector]
+		//[HideInInspector]
 		/// <summary> If true, the player is currently gliding. </summary>
-		public bool isGliding = false; // Has arms out while flying
+		//public bool isGliding = false; // Has arms out while flying
 
 		/// <summary>
 		/// If >0, disables flight then decreases itself by one
@@ -158,6 +158,9 @@ namespace OpenFlightVRC
 		[Range(0f, 2f)]
 		public float weight = 1.0f;
 
+        [Tooltip("Limits how often a user can flap, for realism and audio clipping reasons (Default: 0.5)")]
+        public float flapdelay = 0.5f;
+
         public void Start()
         {
             LocalPlayer = Networking.LocalPlayer;
@@ -175,15 +178,15 @@ namespace OpenFlightVRC
         public void OnEnable()
         {
             timeTick = -20;
-            isFlapping = false;
-            isFlying = false;
-            isGliding = false;
+            FP.isFlapping = false;
+            FP.isFlying = false;
+            FP.isGliding = false;
             //spinningRightRound = false;
         }
 
         public void OnDisable()
         {
-            if (isFlying)
+            if (FP.isFlying)
             {
                 Land();
             }
@@ -205,18 +208,17 @@ namespace OpenFlightVRC
 
         private bool holdingjump = false;
         private bool tappingjump = false;
-        private bool didflap = false;
-        private float flapstrength = 0f;
-        private float letgojump = 0;
-        private float pressjump = 0;
-        private float flapdelay = 0;
+        private double flaptimeprev = 0;
 
         public override void InputJump(bool value, VRC.Udon.Common.UdonInputEventArgs args)
         {
-            if (value)
+            //Limit flapping, more realistic to what a VR user could do and mitigates audio clipping from flapping.
+            if (value && (Time.timeAsDouble > (flaptimeprev + flapdelay)))
             {
                 tappingjump = true;
                 holdingjump = true;
+
+                flaptimeprev = Time.timeAsDouble;
             }
             else
             {
@@ -298,24 +300,24 @@ namespace OpenFlightVRC
 			}
 
 
-			if (!isFlapping)
+			if (!FP.isFlapping)
 			{
 				// Check for the beginning of a flap
 				if (
-					(isFlying || holdingjump)
+					(FP.isFlying || holdingjump)
 					&& (FP.requireJump ? !LocalPlayer.IsPlayerGrounded() : true)
 					&& !FP.IsPlayerInStation()
 					&& downThrust > 0.002f
 				)
 				{
-					isFlapping = true;
+					FP.isFlapping = true;
 					// TakeOff() will check !isFlying
 					TakeOff();
 				}
 			}
 
 			// This should not be an else. It can trigger the same tick as "if (!isFlapping)"
-			if (isFlapping)
+			if (FP.isFlapping)
 			{
 				FlapTick();
 			}
@@ -327,7 +329,7 @@ namespace OpenFlightVRC
 			}
 
 			// Flying starts when a player first flaps and ends when they become grounded
-			if (isFlying)
+			if (FP.isFlying)
 			{
 				FlyTick(fixedDeltaTime);
 			}
@@ -356,7 +358,7 @@ namespace OpenFlightVRC
         private void FlyTick(float dt)
         {
             // Check if FlyTick should be skipped this tick
-			if (FP.IsMainMenuOpen() || ((!isFlapping) && LocalPlayer.IsPlayerGrounded()))
+			if (FP.IsMainMenuOpen() || ((!FP.isFlapping) && LocalPlayer.IsPlayerGrounded()))
 			{
 				Land();
 			}
@@ -370,22 +372,26 @@ namespace OpenFlightVRC
 
 				// Check for a gliding pose
 				// Verbose explanation: (Ensure you're not flapping) && (check for handsOut frame one, ignore handsOut afterwards) && Self Explanatory && Ditto
-				if ((!isFlapping) && (isGliding || holdingjump) && FP.canGlide)
+				if ((!FP.isFlapping) && (FP.isGliding || holdingjump) && FP.canGlide)
 				{
 					// Currently, glideDelay is being disabled to alleviate a VRChat issue where avatars may spazz out while moving at high velocities.
 					// However, this may reintroduce an old bug so we're keeping this here.
 					// If gliding is suddenly causing you to bank up and down rapidly, uncomment this:
 					// if (LocalPlayer.GetVelocity().y > -1f && (!isGliding)) {glideDelay = 3;}
 
-					isGliding = true;
+					FP.isGliding = true;
 					newVelocity = setFinalVelocity ? finalVelocity : LocalPlayer.GetVelocity();
 
 					if (glideDelay <= 1)
 					{
 						Vector3 newForwardRight = Quaternion.Euler(FP.glideAngleOffset, 0, 0) * Vector3.forward;
 						Vector3 newForwardLeft = Quaternion.Euler(-FP.glideAngleOffset, 0, 0) * Vector3.forward;
+
+                        Quaternion headrot = LocalPlayer.GetTrackingData(VRCPlayerApi.TrackingDataType.Head).rotation;
 						// wingDirection is a normal vector pointing towards the forward direction, based on arm/wing angle
-						wingDirection = Vector3.Normalize(Vector3.Slerp(RHRot * newForwardRight, LHRot * newForwardLeft, 0.5f));
+						//wingDirection = Vector3.Normalize(LocalPlayer.GetTrackingData(VRCPlayerApi.TrackingDataType.Head).rotation * newForward);
+                        //wingDirection = Vector3.Normalize(Vector3.Slerp(RHRot * newForwardRight, LHRot * newForwardLeft, 0.5f));
+                        wingDirection = Vector3.Normalize(Vector3.Slerp(headrot * newForwardRight, headrot * newForwardLeft, 0.5f));
 					}
 					else
 					{
@@ -401,21 +407,12 @@ namespace OpenFlightVRC
 						newVelocity = new Vector3(Mathf.Round(tmpV2.x * 10) / 10, newVelocity.y, Mathf.Round(tmpV2.y * 10) / 10);
 					}
 
-					steering = (RHPos.y - LHPos.y) * 80 / armspan;
+					//steering = (RHPos.y - LHPos.y) * 80 / armspan;
 					//clamp steering to 45 degrees
-					steering = Mathf.Clamp(steering, -45, 45);
+					//steering = Mathf.Clamp(steering, -45, 45);
 
-					if (FP.bankingTurns)
-					{
-						// "Where's the logic for banking turns?" See Update()
-						spinningRightRound = true;
-						rotSpeedGoal = steering;
-					}
-					else
-					{
-						// Fallback "banking" which is just midair strafing. Nobody likes how this feels, should depreciate it
-						wingDirection = Quaternion.Euler(0, steering, 0) * wingDirection;
-					}
+                    // Fallback "banking" which is just midair strafing. Nobody likes how this feels, should depreciate it
+                    //wingDirection = Quaternion.Euler(0, steering, 0) * wingDirection;
 
 					// Favoring Fun over Realism
 					// Verbose: X and Z are purely based on which way the wings are pointed ("forward") instead of calculating how the wind would hit each wing, for ease of VR control
@@ -436,7 +433,7 @@ namespace OpenFlightVRC
 				}
 				else // Not in a gliding pose?
 				{
-					isGliding = false;
+					FP.isGliding = false;
 					rotSpeedGoal = 0;
 					glideDelay = 0;
 				}
@@ -452,7 +449,7 @@ namespace OpenFlightVRC
 			{
                 tappingjump = false;
 				// Calculate force to apply based on the flap
-				newVelocity = 0.011f * FP.GetFlapStrength() * DesktopFlapStrength * new Vector3(0,1,0.5f);
+				newVelocity = 0.011f * FP.GetFlapStrength() * DesktopFlapStrength * new Vector3(0, 1.0f, 0);
 
 				if (!FP.useAvatarScale)
 				{
@@ -487,7 +484,7 @@ namespace OpenFlightVRC
 					finalVelocity = Vector3.zero;
 					setFinalVelocity = true;
 				}
-				isFlapping = false;
+				FP.isFlapping = false;
 			}
         }
 
@@ -515,9 +512,9 @@ Glide Delay: {6}
 --Player Controller State--
 Grounded: {7}
 Velocity: {8}",
-                            isFlying,
-                            isFlapping,
-                            isGliding,
+                            FP.isFlying,
+                            FP.isFlapping,
+                            FP.isGliding,
                             false, // Hands are never out on Desktop
                             downThrust,
                             cannotFlyTick > 0,
@@ -580,9 +577,9 @@ Velocity: {8}",
         /// </summary>
         public void TakeOff()
         {
-            if (!isFlying)
+            if (!FP.isFlying)
             {
-                isFlying = true;
+                FP.isFlying = true;
                 if (FP.dynamicPlayerPhysics)
                 {
                     oldGravityStrength = LocalPlayer.GetGravityStrength();
@@ -634,9 +631,9 @@ Velocity: {8}",
         /// </summary>
         public void Land()
         {
-            isFlying = false;
-            isFlapping = false;
-            isGliding = false;
+            FP.isFlying = false;
+            FP.isFlapping = false;
+            FP.isGliding = false;
             spinningRightRound = false;
             rotSpeed = 0;
             rotSpeedGoal = 0;
