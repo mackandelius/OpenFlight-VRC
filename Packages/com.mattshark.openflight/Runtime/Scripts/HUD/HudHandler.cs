@@ -10,13 +10,22 @@ namespace OpenFlightVRC.Hud
     {
         public GameObject HudNotificationObject;
 
+        private Material HudMaterial;
+
+        void Start()
+        {
+            HudMaterial = HudNotificationObject.GetComponent<Renderer>().material;
+        }
+
         public void NotifyFlightCapable()
         {
+            HudMaterial.SetInt("_SwapState", 1);
             HudNotificationObject.SetActive(true);
         }
         
         public void NotifyNotFlightCapable()
         {
+            HudMaterial.SetInt("_SwapState", 0);
             HudNotificationObject.SetActive(true);
         }
     }

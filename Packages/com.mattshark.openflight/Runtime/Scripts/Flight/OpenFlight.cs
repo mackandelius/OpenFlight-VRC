@@ -93,6 +93,11 @@ namespace OpenFlightVRC
 		public GameObject desktopFlight;
 
 		/// <summary>
+        /// 	All flight properties contained onto one object
+        /// </summary>
+		public FlightProperties FP;
+
+		/// <summary>
 		/// The AvatarDetection script, used to re-evaluate flight upon switching to auto
 		/// </summary>
 		public AvatarDetection avatarDetection;
@@ -297,7 +302,10 @@ namespace OpenFlightVRC
 			flightMode = FlightMode.On;
 
 			// TODO Check whether it should even pop up here.
-			HudNotificationHandler.NotifyFlightCapable();
+			if (FP.notifications)
+			{
+				HudNotificationHandler.NotifyFlightCapable();
+			}
 		}
 
 		/// <summary>
@@ -308,7 +316,10 @@ namespace OpenFlightVRC
 			flightMode = FlightMode.Off;
 
 			// TODO Check whether it should even pop up here.
-			HudNotificationHandler.NotifyNotFlightCapable();
+			if (FP.notifications)
+			{
+				HudNotificationHandler.NotifyNotFlightCapable();
+			}
 		}
 
 		/// <summary>
@@ -329,7 +340,10 @@ namespace OpenFlightVRC
 			{
 				SwitchFlight(true);
 
-				HudNotificationHandler.NotifyFlightCapable();
+				if (FP.notifications)
+				{
+					HudNotificationHandler.NotifyFlightCapable();
+				}
 			}
 		}
 
@@ -342,7 +356,10 @@ namespace OpenFlightVRC
 			{
 				SwitchFlight(false);
 
-				HudNotificationHandler.NotifyNotFlightCapable();
+				if (FP.notifications)
+				{
+					HudNotificationHandler.NotifyNotFlightCapable();
+				}
 			}
 		}
 	}
