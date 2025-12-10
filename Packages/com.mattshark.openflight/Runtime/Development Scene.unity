@@ -2742,6 +2742,56 @@ PrefabInstance:
       propertyPath: radius
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5130405854177166011, guid: 83a1dcf8462378640b7615b3011c0c6f,
+        type: 3}
+      propertyPath: collisionTags.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130405854177166011, guid: 83a1dcf8462378640b7615b3011c0c6f,
+        type: 3}
+      propertyPath: collisionTags.Array.data[1]
+      value: OF_NotisOn
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130405854177166011, guid: 83a1dcf8462378640b7615b3011c0c6f,
+        type: 3}
+      propertyPath: collisionTags.Array.data[2]
+      value: OF_NotisOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130405854177166011, guid: 83a1dcf8462378640b7615b3011c0c6f,
+        type: 3}
+      propertyPath: collisionTags.Array.data[3]
+      value: OF_JumpFlyOn
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130405854177166011, guid: 83a1dcf8462378640b7615b3011c0c6f,
+        type: 3}
+      propertyPath: collisionTags.Array.data[4]
+      value: OF_JumpFlyOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130405854177166011, guid: 83a1dcf8462378640b7615b3011c0c6f,
+        type: 3}
+      propertyPath: collisionTags.Array.data[5]
+      value: OF_BankingOn
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130405854177166011, guid: 83a1dcf8462378640b7615b3011c0c6f,
+        type: 3}
+      propertyPath: collisionTags.Array.data[6]
+      value: OF_BankingOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130405854177166011, guid: 83a1dcf8462378640b7615b3011c0c6f,
+        type: 3}
+      propertyPath: collisionTags.Array.data[7]
+      value: OF_WingOffsetMod
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130405854177166011, guid: 83a1dcf8462378640b7615b3011c0c6f,
+        type: 3}
+      propertyPath: collisionTags.Array.data[8]
+      value: OF_FlapStrengthMod
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130405854177166011, guid: 83a1dcf8462378640b7615b3011c0c6f,
+        type: 3}
+      propertyPath: collisionTags.Array.data[9]
+      value: OF_FrictionMod
+      objectReference: {fileID: 0}
     - target: {fileID: 5137845843366909471, guid: 83a1dcf8462378640b7615b3011c0c6f,
         type: 3}
       propertyPath: _syncMethod

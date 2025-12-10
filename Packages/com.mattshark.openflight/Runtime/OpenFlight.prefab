@@ -1001,6 +1001,7 @@ MonoBehaviour:
   debugOutput: {fileID: 0}
   bankingTurns: 1
   dynamicPlayerPhysics: 0
+  notifications: 1
   AviContact: {fileID: 8421150603509121265}
   isGliding: 0
   isFlapping: 0
@@ -1634,6 +1635,7 @@ MonoBehaviour:
   _logProxy: {fileID: 0}
   wingedFlight: {fileID: 4190905666689760637}
   desktopFlight: {fileID: 4825090176533321774}
+  FP: {fileID: 0}
   avatarDetection: {fileID: 4190905665518863880}
   _flightMode: 1
   flightModeString: 
@@ -2215,6 +2217,7 @@ MonoBehaviour:
   OpenFlight: {fileID: 4190905665779482798}
   Sender: {fileID: 5130405854177166011}
   ThisObject: {fileID: 349375172984371564}
+  FP: {fileID: 0}
 --- !u!114 &2303749137223507112
 MonoBehaviour:
   m_ObjectHideFlags: 0
