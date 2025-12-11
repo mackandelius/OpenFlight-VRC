@@ -14,6 +14,7 @@ namespace OpenFlightVRC
     using UdonSharpEditor;
     using UnityEngine.Assertions.Must;
     using BestHTTP.SecureProtocol.Org.BouncyCastle.Asn1.Mozilla;
+    using System;
 #endif
 
     // This is a custom inspector for the WingFlightPlusGlide script. It currently just adds a reset to defaults button
@@ -50,7 +51,7 @@ namespace OpenFlightVRC
         public FlightProperties FP;
 
         [Tooltip("The flap strength of a desktop flight")]
-        public float DesktopFlapStrengthMod = 1.0f;
+        public float DesktopFlapStrengthMod = 0.01f;
 		#endregion
 
 		// State Control Variables
@@ -76,6 +77,16 @@ namespace OpenFlightVRC
 		private Vector3 LHPosLast = Vector3.zero;
 		private Quaternion RHRot;
 		private Quaternion LHRot;
+
+        /// <summary>
+		/// Determines whether the controllers are held outside of an imaginary cylinder.
+		/// </summary>
+		private bool handsOut = false; // Are the controllers held outside of an imaginary cylinder?
+
+		/// <summary>
+		/// Indicates whether the hands are in opposite positions.
+		/// </summary>
+		private bool handsOpposite = false;
 
 		//[HideInInspector]
 		/// <summary> If true, the player is currently in the process of flapping. </summary>
@@ -206,39 +217,21 @@ namespace OpenFlightVRC
             }
         }
 
-        private bool holdingjump = false;
-        private bool tappingjump = false;
-        private double flaptimeprev = 0;
+        private bool holdingJump = false;
+		private int cannotFlapTick = 0;
+		private int jumpTick = 0;
+		private bool wasGroundedBeforeInputJump = false;
+		
 
         public override void InputJump(bool value, VRC.Udon.Common.UdonInputEventArgs args)
         {
-            //Limit flapping, more realistic to what a VR user could do and mitigates audio clipping from flapping.
-            if (value && (!LocalPlayer.IsPlayerGrounded() && FP.requireJump))
-            {
-                if (Time.timeAsDouble > (flaptimeprev + flapdelay))
-                {
-					if (!holdingjump)
-					{
-						tappingjump = true;
-						holdingjump = true;
-						flaptimeprev = Time.timeAsDouble;
-					}
-					else
-					{
-						tappingjump = false;
-					}
-				}
-                else
-                {
-                    tappingjump = false;
-                    holdingjump = true;
-                }
-            }
-            else
-            {
-                tappingjump = false;
-                holdingjump = false;
-            }
+			// ensure every press triggers at least one MainFlightTick tick.
+			if (jumpTick <= 0)
+			{
+				jumpTick = 1;
+				wasGroundedBeforeInputJump = LocalPlayer.IsPlayerGrounded();
+			}
+            holdingJump = value;
         }
 
         public void Update()
@@ -274,6 +267,41 @@ namespace OpenFlightVRC
 				CalculateStats();
 			}
 
+			//Desktop Flight's spacebar checks
+			if (cannotFlapTick > 0)
+			{
+				cannotFlapTick -= 1;
+			}
+			downThrust = 0;
+			// The InputJump() function sets jumpTick to 1, just to ensure every press registers.
+			// Hence why we're checking with jumpTick rather than holdingJump here.
+			if (jumpTick >= 1)
+			{
+				if (jumpTick == 1 && (FP.requireJump ? !wasGroundedBeforeInputJump : true))
+				{
+					if (cannotFlapTick <= 0)
+					{
+						downThrust = DesktopFlapStrengthMod;
+                        cannotFlapTick = (int)Mathf.Round(flapdelay / DeltaTimeTicksPerSecond);
+					}
+				}
+				handsOut = true;
+				jumpTick += 1;
+			}
+			// Essentially an else statement. See prior comment about "The InputJump()..."
+			if (!holdingJump)
+			{
+				jumpTick = 0;
+				handsOut = false;
+				handsOpposite = true;
+			}
+			
+			if (jumpTick > flapdelay / DeltaTimeTicksPerSecond)
+			{
+				handsOpposite = true;
+			}
+			
+
 			// Only affect velocity this tick if setFinalVelocity == true by the end
 			setFinalVelocity = false;
 
@@ -297,11 +325,7 @@ namespace OpenFlightVRC
 				LHPosLast = LHPos;
 			}
 
-			downThrust = 0;
-			if (tappingjump)
-			{
-				downThrust = DesktopFlapStrengthMod;
-			}
+			//downThrust = 0;
 
 			// Check if player is falling
 			if ((!LocalPlayer.IsPlayerGrounded()) && LocalPlayer.GetVelocity().y < 0)
@@ -318,7 +342,7 @@ namespace OpenFlightVRC
 			{
 				// Check for the beginning of a flap
 				if (
-					(FP.isFlying || tappingjump)
+					(FP.isFlying || handsOut)
 					&& (FP.requireJump ? !LocalPlayer.IsPlayerGrounded() : true)
 					&& !FP.IsPlayerInStation()
 					&& downThrust > 0.002f
@@ -386,7 +410,7 @@ namespace OpenFlightVRC
 
 				// Check for a gliding pose
 				// Verbose explanation: (Ensure you're not flapping) && (check for handsOut frame one, ignore handsOut afterwards) && Self Explanatory && Ditto
-				if ((!FP.isFlapping) && (FP.isGliding || holdingjump) && holdingjump && FP.canGlide)
+				if ((!FP.isFlapping) && (FP.isGliding || handsOut) && handsOpposite && FP.canGlide)
 				{
 					// Currently, glideDelay is being disabled to alleviate a VRChat issue where avatars may spazz out while moving at high velocities.
 					// However, this may reintroduce an old bug so we're keeping this here.
@@ -459,9 +483,8 @@ namespace OpenFlightVRC
         /// </summary>
         private void FlapTick()
         {
-            if (tappingjump)
+            if (downThrust > 0)
 			{
-                tappingjump = false;
 				// Calculate force to apply based on the flap
 				newVelocity = 0.011f * FP.GetFlapStrength() * DesktopFlapStrengthMod * new Vector3(0, 1.0f, 0);
 
