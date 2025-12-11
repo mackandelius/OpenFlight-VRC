@@ -213,12 +213,15 @@ namespace OpenFlightVRC
         public override void InputJump(bool value, VRC.Udon.Common.UdonInputEventArgs args)
         {
             //Limit flapping, more realistic to what a VR user could do and mitigates audio clipping from flapping.
-            if (value && (Time.timeAsDouble > (flaptimeprev + flapdelay)))
+            if (value)
             {
-                tappingjump = true;
-                holdingjump = true;
+                if (Time.timeAsDouble > (flaptimeprev + flapdelay))
+                {
+                    tappingjump = true;
+                    holdingjump = true;
 
-                flaptimeprev = Time.timeAsDouble;
+                    flaptimeprev = Time.timeAsDouble;
+                }
             }
             else
             {
@@ -304,7 +307,7 @@ namespace OpenFlightVRC
 			{
 				// Check for the beginning of a flap
 				if (
-					(FP.isFlying || holdingjump)
+					(FP.isFlying || tappingjump)
 					&& (FP.requireJump ? !LocalPlayer.IsPlayerGrounded() : true)
 					&& !FP.IsPlayerInStation()
 					&& downThrust > 0.002f

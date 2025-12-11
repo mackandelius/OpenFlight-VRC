@@ -34,6 +34,8 @@ namespace OpenFlightVRC.Contact
 
         private VRCPlayerApi Localplayer;
 
+        private ContactSenderProxy FlightEnableRef;
+
         public void Start()
         {
             Sender.enabled = false;
@@ -46,15 +48,15 @@ namespace OpenFlightVRC.Contact
             Logger.Log("Avatar OF_IsFlying Contact " + boolState, this);
         }
 
+        private bool canfly = false;
+        private bool cannotfly = false;
+
         public override void OnContactEnter(ContactEnterInfo contactInfo)
         {
             //Check if local user contact
             if (Localplayer == contactInfo.contactSender.player)
             {
                 string[] tags = contactInfo.matchingTags;
-
-                bool canfly = false;
-                bool cannotfly = false;
 
                 // We can't use string.Contain which requires linq or string.exists which requires lambda functions, Udon doesn't expose either.
                 foreach (var tag in tags)
@@ -113,25 +115,17 @@ namespace OpenFlightVRC.Contact
                             break;
 
                         case "OF_CanFly":
+                            FlightEnableRef = contactInfo.contactSender;
                             canfly = true;
                             cannotfly = false;
                             break;
 
                         case "OF_CanNotFly":
+                            FlightEnableRef = contactInfo.contactSender;
                             canfly = false;
                             cannotfly = true;
                             break;
                     }
-                    //if (tag == "OF_CanFly")
-                    //{
-                    //    canfly = true;
-                    //    cannotfly = false;
-                    //}
-                    //else if (tag == "OF_CanNotFly")
-                    //{
-                    //    canfly = false;
-                    //    cannotfly = true;
-                    //}
                 }
 
                 if (canfly)
@@ -154,15 +148,18 @@ namespace OpenFlightVRC.Contact
             //Check if local user contact
             if (Localplayer == contactInfo.contactSender.player)
             {
-                if (IsAllowedToFly)
+                if (FlightEnableRef == contactInfo.contactSender)
                 {
-                    Logger.Log("Contact stopped being detected, deactivating flying", this);
-                    OpenFlight.CannotFly();
-                }
-                else
-                {
-                    Logger.Log("Contact stopped being detected, activating flying", this);
-                    OpenFlight.CanFly();
+                    if (IsAllowedToFly)
+                    {
+                        Logger.Log("Contact stopped being detected, deactivating flying", this);
+                        OpenFlight.CannotFly();
+                    }
+                    else
+                    {
+                        Logger.Log("Contact stopped being detected, activating flying", this);
+                        OpenFlight.CanFly();
+                    }
                 }
             }
         }
