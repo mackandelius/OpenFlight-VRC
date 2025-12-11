@@ -50,7 +50,7 @@ namespace OpenFlightVRC
         public FlightProperties FP;
 
         [Tooltip("The flap strength of a desktop flight")]
-        public float DesktopFlapStrength = 0.01f;
+        public float DesktopFlapStrengthMod = 1.0f;
 		#endregion
 
 		// State Control Variables
@@ -213,14 +213,25 @@ namespace OpenFlightVRC
         public override void InputJump(bool value, VRC.Udon.Common.UdonInputEventArgs args)
         {
             //Limit flapping, more realistic to what a VR user could do and mitigates audio clipping from flapping.
-            if (value)
+            if (value && (!LocalPlayer.IsPlayerGrounded() && FP.requireJump))
             {
                 if (Time.timeAsDouble > (flaptimeprev + flapdelay))
                 {
-                    tappingjump = true;
+					if (!holdingjump)
+					{
+						tappingjump = true;
+						holdingjump = true;
+						flaptimeprev = Time.timeAsDouble;
+					}
+					else
+					{
+						tappingjump = false;
+					}
+				}
+                else
+                {
+                    tappingjump = false;
                     holdingjump = true;
-
-                    flaptimeprev = Time.timeAsDouble;
                 }
             }
             else
@@ -289,7 +300,7 @@ namespace OpenFlightVRC
 			downThrust = 0;
 			if (tappingjump)
 			{
-				downThrust = DesktopFlapStrength;
+				downThrust = DesktopFlapStrengthMod;
 			}
 
 			// Check if player is falling
@@ -375,7 +386,7 @@ namespace OpenFlightVRC
 
 				// Check for a gliding pose
 				// Verbose explanation: (Ensure you're not flapping) && (check for handsOut frame one, ignore handsOut afterwards) && Self Explanatory && Ditto
-				if ((!FP.isFlapping) && (FP.isGliding || holdingjump) && FP.canGlide)
+				if ((!FP.isFlapping) && (FP.isGliding || holdingjump) && holdingjump && FP.canGlide)
 				{
 					// Currently, glideDelay is being disabled to alleviate a VRChat issue where avatars may spazz out while moving at high velocities.
 					// However, this may reintroduce an old bug so we're keeping this here.
@@ -394,7 +405,7 @@ namespace OpenFlightVRC
 						// wingDirection is a normal vector pointing towards the forward direction, based on arm/wing angle
 						//wingDirection = Vector3.Normalize(LocalPlayer.GetTrackingData(VRCPlayerApi.TrackingDataType.Head).rotation * newForward);
                         //wingDirection = Vector3.Normalize(Vector3.Slerp(RHRot * newForwardRight, LHRot * newForwardLeft, 0.5f));
-                        wingDirection = Vector3.Normalize(Vector3.Slerp(headrot * newForwardRight, headrot * newForwardLeft, 0.5f));
+                        wingDirection = Vector3.Normalize(headrot * Vector3.forward);
 					}
 					else
 					{
@@ -452,7 +463,7 @@ namespace OpenFlightVRC
 			{
                 tappingjump = false;
 				// Calculate force to apply based on the flap
-				newVelocity = 0.011f * FP.GetFlapStrength() * DesktopFlapStrength * new Vector3(0, 1.0f, 0);
+				newVelocity = 0.011f * FP.GetFlapStrength() * DesktopFlapStrengthMod * new Vector3(0, 1.0f, 0);
 
 				if (!FP.useAvatarScale)
 				{
