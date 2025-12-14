@@ -296,7 +296,7 @@ namespace OpenFlightVRC
 				handsOpposite = false;
 			}
 			
-			if (jumpTick > flapdelay / DeltaTimeTicksPerSecond)
+			if (jumpTick > flapdelay / 5 / DeltaTimeTicksPerSecond)
 			{
 				handsOpposite = true;
 			}
@@ -309,20 +309,20 @@ namespace OpenFlightVRC
 
 			// Check if hands are being moved downward while above a certain Y threshold
 			// We're using LocalPlayer.GetPosition() to turn these global coordinates into local ones
-			VRCPlayerApi.TrackingData leftHandData = LocalPlayer.GetTrackingData(VRCPlayerApi.TrackingDataType.RightHand);
-			RHPos = playerPos - leftHandData.position;
-			RHRot = leftHandData.rotation;
+			//VRCPlayerApi.TrackingData leftHandData = LocalPlayer.GetTrackingData(VRCPlayerApi.TrackingDataType.RightHand);
+			//RHPos = playerPos - leftHandData.position;
+			//RHRot = leftHandData.rotation;
 
-			VRCPlayerApi.TrackingData rightHandData = LocalPlayer.GetTrackingData(VRCPlayerApi.TrackingDataType.LeftHand);
-			LHPos = playerPos - rightHandData.position;
-			LHRot = rightHandData.rotation;
+			//VRCPlayerApi.TrackingData rightHandData = LocalPlayer.GetTrackingData(VRCPlayerApi.TrackingDataType.LeftHand);
+			//LHPos = playerPos - rightHandData.position;
+			//LHRot = rightHandData.rotation;
 
 			if (timeTick < 0)
 			{
 				// This block only runs once shortly after joining the world. (2/2)
 				timeTick = 0;
-				RHPosLast = RHPos;
-				LHPosLast = LHPos;
+				//RHPosLast = RHPos;
+				//LHPosLast = LHPos;
 			}
 
 			//downThrust = 0;
@@ -372,8 +372,8 @@ namespace OpenFlightVRC
 				FlyTick(fixedDeltaTime);
 			}
 
-			RHPosLast = RHPos;
-			LHPosLast = LHPos;
+			//RHPosLast = RHPos;
+			//LHPosLast = LHPos;
 
 			if (cannotFlyTick > 0)
 			{

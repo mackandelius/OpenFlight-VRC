@@ -1,13 +1,6 @@
 ﻿using System;
-
-using BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC;
-
 using UdonSharp;
-
-using Unity.Collections.LowLevel.Unsafe;
-
 using UnityEngine;
-
 using VRC.Dynamics;
 using VRC.SDK3.Dynamics.Contact.Components;
 using VRC.SDKBase;
@@ -28,16 +21,10 @@ namespace OpenFlightVRC.Contact
         /// </summary>
         public VRCContactSender Sender;
 
-        /// <summary>
-        /// Stored value of whether the player is allowed to fly or not.
-        /// </summary>
-        private bool IsAllowedToFly;
-
         public FlightProperties FP;
 
         private VRCPlayerApi Localplayer;
 
-        private ContactSenderProxy FlightEnableRef;
 
         public void Start()
         {
@@ -50,9 +37,6 @@ namespace OpenFlightVRC.Contact
             Sender.enabled = boolState;
             Logger.Log("Avatar OF_IsFlying Contact " + boolState, this);
         }
-
-        private bool canfly = false;
-        private bool cannotfly = false;
 
         public override void OnContactEnter(ContactEnterInfo contactInfo)
         {
@@ -127,52 +111,14 @@ namespace OpenFlightVRC.Contact
                             break;
 
                         case "OF_CanFly":
-                            FlightEnableRef = contactInfo.contactSender;
-                            canfly = true;
-                            cannotfly = false;
+                            Logger.Log("Contact is activating flying", this);
+                            OpenFlight.CanFly();
                             break;
 
                         case "OF_CanNotFly":
-                            FlightEnableRef = contactInfo.contactSender;
-                            canfly = false;
-                            cannotfly = true;
+                            Logger.Log("Contact is deactivating flying", this);
+                            OpenFlight.CannotFly();
                             break;
-                    }
-                }
-
-                if (canfly)
-                {
-                    Logger.Log("Contact is activating flying", this);
-                    OpenFlight.CanFly();
-                    IsAllowedToFly = true;
-                }
-                else if (cannotfly)
-                {
-                    Logger.Log("Contact is deactivating flying", this);
-                    OpenFlight.CannotFly();
-                    IsAllowedToFly = false;
-                }
-            }
-        }
-
-        public override void OnContactExit(ContactExitInfo contactInfo)
-        {
-            //Check if local user contact
-            if (Localplayer == contactInfo.contactSender.player)
-            {
-                if (FlightEnableRef == contactInfo.contactSender || FlightEnableRef != null)
-                {
-                    if (IsAllowedToFly)
-                    {
-                        FlightEnableRef = null;
-                        Logger.Log("Contact stopped being detected, deactivating flying", this);
-                        OpenFlight.CannotFly();
-                    }
-                    else
-                    {
-                        FlightEnableRef = null;
-                        Logger.Log("Contact stopped being detected, activating flying", this);
-                        OpenFlight.CanFly();
                     }
                 }
             }
