@@ -3,6 +3,9 @@
 using BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC;
 
 using UdonSharp;
+
+using Unity.Collections.LowLevel.Unsafe;
+
 using UnityEngine;
 
 using VRC.Dynamics;
@@ -66,31 +69,37 @@ namespace OpenFlightVRC.Contact
                         case "OF_NotisOn":
                             //Forcefully turn on notification
                             FP.notifications = true;
+                            Logger.Log("Notifications turned on using contacts", this);
                             break;
 
                         case "OF_NotisOff":
                             //Forcefully turn off notification
                             FP.notifications = false;
+                            Logger.Log("Notifications turned off using contacts", this);
                             break;
 
                         case "OF_JumpFlyOn":
                             //Forcefully turn on jump to fly
                             FP.requireJump = true;
+                            Logger.Log("Require jump turned on using contacts", this);
                             break;
 
                         case "OF_JumpFlyOff":
                             //Forcefully turn off jump to fly
                             FP.requireJump = false;
+                            Logger.Log("Require jump turned off using contacts", this);
                             break;
                         
                         case "OF_BankingOn":
                             //Forcefully turn on banking
                             FP.bankingTurns = true;
+                            Logger.Log("Banking turned on using contacts", this);
                             break;
 
                         case "OF_BankingOff":
                             //Forcefully turn off banking
                             FP.bankingTurns = false;
+                            Logger.Log("Banking turned off using contacts", this);
                             break;
 
                         case "OF_WingOffsetMod":
@@ -98,6 +107,7 @@ namespace OpenFlightVRC.Contact
                             float contactX = Math.Abs(contactInfo.contactSender.position.x - this.transform.position.x);
                             float newoffset = Mathf.Lerp(0, 40, contactX);
                             FP.wingtipOffset = newoffset;
+                            Logger.Log("Wingoffset set to " + newoffset.ToString() + " using contacts", this);
                             break;
 
                         case "OF_FlapStrengthMod":
@@ -105,13 +115,15 @@ namespace OpenFlightVRC.Contact
                             float contactY = Math.Abs(contactInfo.contactSender.position.y - this.transform.position.y);
                             int newstrength = (int)Mathf.Lerp(100, 800, contactY);
                             FP.flapStrengthBase = newstrength;
-                            
+                            Logger.Log("Flap strength set to " + newstrength.ToString() + " using contacts", this);
                             break;
+
                         case "OF_FrictionMod":
                             //Tell system that friction is being modified
                             float contactZ = Math.Abs(contactInfo.contactSender.position.z - this.transform.position.z);
                             float newfriction = Mathf.Lerp(0.0f, 0.2f, contactZ);
                             FP.airFriction = newfriction;
+                            Logger.Log("Friction set to " + newfriction.ToString() + " using contacts", this);
                             break;
 
                         case "OF_CanFly":
@@ -148,15 +160,17 @@ namespace OpenFlightVRC.Contact
             //Check if local user contact
             if (Localplayer == contactInfo.contactSender.player)
             {
-                if (FlightEnableRef == contactInfo.contactSender)
+                if (FlightEnableRef == contactInfo.contactSender || FlightEnableRef != null)
                 {
                     if (IsAllowedToFly)
                     {
+                        FlightEnableRef = null;
                         Logger.Log("Contact stopped being detected, deactivating flying", this);
                         OpenFlight.CannotFly();
                     }
                     else
                     {
+                        FlightEnableRef = null;
                         Logger.Log("Contact stopped being detected, activating flying", this);
                         OpenFlight.CanFly();
                     }
