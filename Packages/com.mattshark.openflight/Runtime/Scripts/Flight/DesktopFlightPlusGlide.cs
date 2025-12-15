@@ -387,8 +387,6 @@ namespace OpenFlightVRC
 				finalVelocity = Vector3.ClampMagnitude(finalVelocity, 2000);
 				LocalPlayer.SetVelocity(finalVelocity);
 			}
-
-			Debug.Log("Jumptick set to " + jumpTick + " - cannot flap tick is " + cannotFlapTick + " - holdingJump is " + holdingJump + " - Hands out is " + handsOut, this);
 		}
 
         /// <summary>

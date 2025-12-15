@@ -1876,6 +1876,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1381445849392784988, guid: 83a1dcf8462378640b7615b3011c0c6f,
         type: 3}
+    - target: {fileID: 1398630397950081522, guid: 83a1dcf8462378640b7615b3011c0c6f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1404994776641595860, guid: 83a1dcf8462378640b7615b3011c0c6f,
         type: 3}
       propertyPath: _syncMethod
@@ -2006,6 +2011,36 @@ PrefabInstance:
         type: 3}
       propertyPath: _syncMethod
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1904325609181120736, guid: 83a1dcf8462378640b7615b3011c0c6f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1904325609181120736, guid: 83a1dcf8462378640b7615b3011c0c6f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1904325609181120736, guid: 83a1dcf8462378640b7615b3011c0c6f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1904325609181120736, guid: 83a1dcf8462378640b7615b3011c0c6f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1904325609181120736, guid: 83a1dcf8462378640b7615b3011c0c6f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1904325609181120736, guid: 83a1dcf8462378640b7615b3011c0c6f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1940415145875739190, guid: 83a1dcf8462378640b7615b3011c0c6f,
         type: 3}
@@ -3879,6 +3914,11 @@ PrefabInstance:
         type: 3}
       propertyPath: DesktopFlapStrength
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6986759007839821683, guid: 83a1dcf8462378640b7615b3011c0c6f,
+        type: 3}
+      propertyPath: DesktopFlapStrengthMod
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 6986759007839821683, guid: 83a1dcf8462378640b7615b3011c0c6f,
         type: 3}
@@ -5878,13 +5918,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349044239}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: -0, y: 0.42501396, z: -0, w: 0.90518683}
+  m_LocalPosition: {x: 0.94, y: 1, z: 0.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 50.303, z: 0}
 --- !u!1 &349289165 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 233237651256496259, guid: c3e16ceaf4929fe4cbed69e31989189c,
@@ -19174,12 +19214,12 @@ PrefabInstance:
         type: 3}
       propertyPath: DynamicMaterials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 1c987494452b85f4ab4cac3322415907, type: 2}
+      objectReference: {fileID: 2100000, guid: 0923c77949c327045b5f8e90603d8950, type: 2}
     - target: {fileID: 6759095419728963412, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
       propertyPath: DynamicMaterials.Array.data[2]
       value: 
-      objectReference: {fileID: 2100000, guid: 0923c77949c327045b5f8e90603d8950, type: 2}
+      objectReference: {fileID: 2100000, guid: 1c987494452b85f4ab4cac3322415907, type: 2}
     - target: {fileID: 6759095419728963412, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
       propertyPath: DynamicMaterials.Array.data[3]
