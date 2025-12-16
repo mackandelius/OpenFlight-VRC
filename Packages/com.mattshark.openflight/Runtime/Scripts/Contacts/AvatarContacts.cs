@@ -121,6 +121,10 @@ namespace OpenFlightVRC.Contact
                                 Logger.Log("Contact is deactivating flying", this);
                                 OpenFlight.CannotFly();
                                 break;
+
+                            default:
+                                Logger.Log("Unknown contact: " + tag, this);
+                                break;
                         }
                     }
                 }

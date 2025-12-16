@@ -106,7 +106,7 @@ namespace OpenFlightVRC
 		[FieldChangeCallback(nameof(flightMode)), SerializeField]
 		private FlightMode _flightMode = FlightMode.Auto;
 		/// <summary>
-		/// The current flight mode. Will not allow flight if the player is not in VR. Can be bypassed with <see cref="ignoreVRCheck"/>, but doing so is not recommended.
+		/// The current flight mode.
 		/// </summary>
 		public FlightMode flightMode
 		{
@@ -114,7 +114,6 @@ namespace OpenFlightVRC
 			set
 			{
 				_flightMode = value;
-				const string FLIGHTCANTBESETTEMPLATE = "Flight cannot be set to {0} because the player is not in VR";
 				//update the flight mode string
 				switch (value)
 				{
@@ -123,42 +122,28 @@ namespace OpenFlightVRC
 						SwitchFlight(false);
 						Logger.Log("Flight turned off", this);
 						break;
+
 					case FlightMode.Auto:
-						//if (InVR())
-						if (true)
+						flightModeString = "Auto";
+						SwitchFlight(false);
+						//tell the avatar detection script to check if the player can fly again
+						if (avatarDetection != null)
 						{
-							flightModeString = "Auto";
-							SwitchFlight(false);
-							//tell the avatar detection script to check if the player can fly again
-							if (avatarDetection != null)
-							{
-								avatarDetection.ReevaluateFlight();
-							}
-							Logger.Log("Flight set to auto", this);
+							avatarDetection.ReevaluateFlight();
 						}
-						else
-						{
-							flightMode = FlightMode.Off;
-							Logger.Log(string.Format(FLIGHTCANTBESETTEMPLATE, "Auto"), this);
-						}
+						Logger.Log("Flight set to auto", this);
 						break;
+
 					case FlightMode.On:
-						if (true)
-						//if (InVR())
-						{
-							flightModeString = "On";
-							SwitchFlight(true);
-							Logger.Log("Flight turned on", this);
-						}
-						else
-						{
-							flightMode = FlightMode.Off;
-							Logger.Log(string.Format(FLIGHTCANTBESETTEMPLATE, "On"), this);
-						}
+						flightModeString = "On";
+						SwitchFlight(true);
+						Logger.Log("Flight turned on", this);
 						break;
+
 					default:
 						flightModeString = "Unknown";
 						break;
+
 				}
 			}
 		}
@@ -191,15 +176,7 @@ namespace OpenFlightVRC
 				}
 				else
 				{
-					//if (InVR())
-					if (true)
-					{
-						flightAllowedString = "Inactive";
-					}
-					else
-					{
-						flightAllowedString = "Inactive (Not in VR)";
-					}
+					flightAllowedString = "Inactive";
 				}
 			}
 		}
@@ -221,6 +198,7 @@ namespace OpenFlightVRC
 		/// </remarks>
 		[ReadOnlyInspector]
 		public bool ignoreVRCheck = true;
+
 
 		/// <summary>
 		/// Turns flight off
@@ -246,10 +224,6 @@ namespace OpenFlightVRC
 		/// <returns></returns>
 		private bool InVR()
 		{
-			if (ignoreVRCheck)
-			{
-				Logger.LogWarning("VR check is being ignored! This should not be enabled in a production build!", this);
-			}
 
 			//ensure the user is valid
 			if (_localPlayer == null)
@@ -257,8 +231,7 @@ namespace OpenFlightVRC
 				_localPlayer = Networking.LocalPlayer;
 			}
 
-			return _localPlayer.IsUserInVR() || ignoreVRCheck;
-			//return _localPlayer.IsUserInVR();
+			return _localPlayer.IsUserInVR();
 		}
 
 		public void Start()

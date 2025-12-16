@@ -60,6 +60,34 @@
             float _Cutoff;
             int _SwapState;
 
+            //
+            // https://github.com/cnlohr/shadertrixx
+            //
+
+            bool isVR()
+            {
+                #if defined(USING_STEREO_MATRICES)
+                    return true;
+                #else
+                    return false;
+                #endif
+            }
+
+            bool isDesktop() { return !isVR() && abs(UNITY_MATRIX_V[0].y) < 0.0000005; }
+
+            bool isRightEye()
+            {
+                #if defined(USING_STEREO_MATRICES)
+                    return unity_StereoEyeIndex == 1;
+                #else
+                    return false;
+                #endif
+            }
+
+            //
+            //
+            //
+
             //Vertex
 
             v2f Vertex(appdata i) {
@@ -94,33 +122,6 @@
                 return o;
             }
 
-            //
-            // https://github.com/cnlohr/shadertrixx
-            //
-
-            bool isVR()
-            {
-                #if defined(USING_STEREO_MATRICES)
-                    return true;
-                #else
-                    return false;
-                #endif
-            }
-
-            bool isDesktop() { return !isVR() && abs(UNITY_MATRIX_V[0].y) < 0.0000005; }
-
-            bool isRightEye()
-            {
-                #if defined(USING_STEREO_MATRICES)
-                    return unity_StereoEyeIndex == 1;
-                #else
-                    return false;
-                #endif
-            }
-
-            //
-            //
-            //
 
             float4 Fragment(v2f input) : SV_Target {
                 UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(i); 
@@ -137,6 +138,10 @@
 
                     if (col.a < _Cutoff)
                         discard;
+                }
+                else
+                {
+                    discard;
                 }
                 return col * _Color;
             }

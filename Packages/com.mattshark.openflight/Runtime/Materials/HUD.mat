@@ -77,14 +77,14 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Rotation: 180
-    - _Scale: 0.638
+    - _Scale: 0.377
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SwapState: 0
     - _UVSec: 0
-    - _XTranslate: 0.58
-    - _YTranslate: 0.75
+    - _XTranslate: 0.452
+    - _YTranslate: 0.457
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
