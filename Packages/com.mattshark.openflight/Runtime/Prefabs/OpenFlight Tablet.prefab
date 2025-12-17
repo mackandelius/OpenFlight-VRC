@@ -9162,7 +9162,7 @@ MonoBehaviour:
       Data: 
   _udonSharpBackingUdonBehaviour: {fileID: 5190688136465432780}
   _logProxy: {fileID: 0}
-  target: {fileID: 6124323176627279620}
+  target: {fileID: 6124323177588583349}
   targetVariable: WingtipOffset
 --- !u!114 &5190688136465432780
 MonoBehaviour:
@@ -18285,7 +18285,7 @@ MonoBehaviour:
       Data: 
   _udonSharpBackingUdonBehaviour: {fileID: 2026745366343170521}
   _logProxy: {fileID: 0}
-  target: {fileID: 6124323176627279620}
+  target: {fileID: 6124323177588583349}
   targetVariable: weight
 --- !u!114 &2026745366343170521
 MonoBehaviour:
@@ -26580,7 +26580,7 @@ GameObject:
   - component: {fileID: 6124323177588583350}
   - component: {fileID: 6124323177588583349}
   m_Layer: 13
-  m_Name: WingedFlightProxy
+  m_Name: FlightPropertiesProxy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -175,7 +175,7 @@ namespace OpenFlightVRC.Net
 				//IsFlapping = wingFlightPlusGlide.isFlapping;
 				//IsContributer = contributerDetection.localPlayerIsContributer;
 				PackedData = Util.BitPackBool(flightProperties.isFlying, flightProperties.isFlapping, ContributerDetection.localPlayerIsContributer);
-				WorldWingtipOffset = AvatarDetection.WingtipOffset * (float)AvatarDetection.d_spinetochest;
+				WorldWingtipOffset = flightProperties.wingtipOffset * (float)AvatarDetection.d_spinetochest;
 			}
 		}
 

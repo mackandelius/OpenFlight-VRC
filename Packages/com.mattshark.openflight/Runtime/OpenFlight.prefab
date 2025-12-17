@@ -58,7 +58,7 @@ MonoBehaviour:
   _logProxy: {fileID: 0}
   Assigner: {fileID: 3229224512676425260}
   avatarDetection: {fileID: 4190905665518863880}
-  wingFlightPlusGlide: {fileID: 4190905666689760639}
+  flightProperties: {fileID: 0}
   openFlight: {fileID: 4190905665779482798}
   contributerDetection: {fileID: 2986383786320253808}
   SFX: 1
@@ -1254,7 +1254,7 @@ Transform:
   m_GameObject: {fileID: 4036675127412441971}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1442,7 +1442,7 @@ MonoBehaviour:
   d_spinetochest: 0
   JSONLoader: {fileID: 4190905665610937113}
   OpenFlight: {fileID: 4190905665779482798}
-  WingFlightPlusGlide: {fileID: 4190905666689760639}
+  flightProperties: {fileID: 6111117273520572025}
   jsonVersion: 
   jsonDate: 
   allowedToFly: 0
@@ -1635,7 +1635,7 @@ MonoBehaviour:
   _logProxy: {fileID: 0}
   wingedFlight: {fileID: 4190905666689760637}
   desktopFlight: {fileID: 4825090176533321774}
-  FP: {fileID: 0}
+  FP: {fileID: 6111117273520572025}
   avatarDetection: {fileID: 4190905665518863880}
   _flightMode: 1
   flightModeString: 
@@ -1727,8 +1727,6 @@ MonoBehaviour:
   _logProxy: {fileID: 0}
   loadBearingTransform: {fileID: 61828550691905372}
   FP: {fileID: 6111117273520572025}
-  isFlapping: 0
-  isGliding: 0
   armspan: 1
   wingtipOffset: 0
   weight: 1
@@ -2010,12 +2008,11 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 5553549530890572321}
   _logProxy: {fileID: 0}
   FP: {fileID: 6111117273520572025}
-  DesktopFlapStrength: 0
-  isFlapping: 0
-  isGliding: 0
+  DesktopFlapStrengthMod: 1.1
   armspan: 1
   wingtipOffset: 0
   weight: 1
+  flapdelay: 0.5
 --- !u!114 &5553549530890572321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2216,8 +2213,7 @@ MonoBehaviour:
   _logProxy: {fileID: 0}
   OpenFlight: {fileID: 4190905665779482798}
   Sender: {fileID: 5130405854177166011}
-  ThisObject: {fileID: 349375172984371564}
-  FP: {fileID: 0}
+  FP: {fileID: 6111117273520572025}
 --- !u!114 &2303749137223507112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2258,15 +2254,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootTransform: {fileID: 349375172984371564}
   shapeType: 0
-  radius: 0.5
+  radius: 1
   height: 2
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
-  contentTypes: -1
+  contentTypes: 1
   collisionTags:
   - OF_CanFly
   - OF_CanNotFly
+  - OF_NotisOn
+  - OF_NotisOff
+  - OF_JumpFlyOn
+  - OF_JumpFlyOff
+  - OF_BankingOn
+  - OF_BankingOff
+  - OF_WingOffsetMod
+  - OF_FlapStrengthMod
+  - OF_FrictionMod
+  - OF_CanGlideOn
+  - OF_CanGlideOff
+  - OF_GlideControlMod
+  - OF_GravityMod
+  - OF_WeightMod
   allowSelf: 1
   allowOthers: 1
   receiverType: 0
@@ -2286,7 +2296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootTransform: {fileID: 349375172984371564}
   shapeType: 0
-  radius: 0.2
+  radius: 1
   height: 2
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}

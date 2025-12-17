@@ -71,7 +71,7 @@ namespace OpenFlightVRC
 		/// <summary>
 		/// The WingFlightPlusGlide script, needed to set the flight properties
 		/// </summary>
-		public WingFlightPlusGlide WingFlightPlusGlide;
+		public FlightProperties flightProperties;
 		#endregion
 		#region JSON Info
 		[System.NonSerialized]
@@ -195,8 +195,8 @@ namespace OpenFlightVRC
 			//we need a accurate avatar scale for the hash to work
 			d_spinetochest = CalculateAvatarScale(out Vector3 spine, out Vector3 chest);
 
-			WingFlightPlusGlide.wingtipOffset = WingtipOffset;
-			WingFlightPlusGlide.weight = weight;
+			flightProperties.wingtipOffset = WingtipOffset;
+			flightProperties.weight = weight;
 
 			//get all the bones
 			Vector3 head = _localPlayer.GetBonePosition(HumanBodyBones.Head);
@@ -233,8 +233,8 @@ namespace OpenFlightVRC
 				else
 				{
 					OpenFlight.CannotFly();
-					WingFlightPlusGlide.wingtipOffset = 0;
-					WingFlightPlusGlide.weight = 1;
+					flightProperties.wingtipOffset = 0;
+					flightProperties.weight = 1;
 					Logger.Log("Avatar is not allowed to fly!", this);
 				}
 			}
