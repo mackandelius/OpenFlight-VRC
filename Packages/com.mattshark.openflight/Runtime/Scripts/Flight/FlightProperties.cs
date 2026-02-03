@@ -150,12 +150,6 @@ namespace OpenFlightVRC
         public bool dynamicPlayerPhysics = false;
 
         /// <summary>
-        /// If enabled then OpenFlight will pop up with a notification if your avatar can fly
-        /// </summary>
-        [Tooltip("If enabled, send notifications to players whenever flight status is changed, for example swapping into flight capable avatar or enabling flight manually or through contacts.")]
-        public bool notifications = true;
-
-        /// <summary>
         /// Udon behavior handling the contact system, for telling an avatar it is flying and an avatar telling OpenFlight it can fly.
         /// </summary>
         [Tooltip("Has to link to the correct contact udon behavior for contact detection and sending to work.")]

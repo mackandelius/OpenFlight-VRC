@@ -54,18 +54,6 @@ namespace OpenFlightVRC.Contact
                         {
                             switch (tag)
                             {
-                                case "OF_NotisOn":
-                                    //Forcefully turn on notification
-                                    FP.notifications = true;
-                                    Logger.Log("Notifications turned on using contacts", this);
-                                    break;
-
-                                case "OF_NotisOff":
-                                    //Forcefully turn off notification
-                                    FP.notifications = false;
-                                    Logger.Log("Notifications turned off using contacts", this);
-                                    break;
-
                                 case "OF_JumpFlyOn":
                                     //Forcefully turn on jump to fly
                                     FP.requireJump = true;

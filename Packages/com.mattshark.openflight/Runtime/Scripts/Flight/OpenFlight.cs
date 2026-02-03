@@ -181,12 +181,6 @@ namespace OpenFlightVRC
 			}
 		}
 
-		/// <summary
-		/// Udon behavior handing HUD notification for telling if flight is possible or not.
-		/// </summary>
-		[Tooltip("Has to link to the correct contact udon behavior for contact detection and sending to work.")]
-		public Hud.HudHandler HudNotificationHandler;
-
 		[ReadOnlyInspector]
 		public string flightAllowedString = "";
 
@@ -273,12 +267,6 @@ namespace OpenFlightVRC
 		public void FlightOn()
 		{
 			flightMode = FlightMode.On;
-
-			// TODO Check whether it should even pop up here.
-			if (FP.notifications)
-			{
-				HudNotificationHandler.NotifyFlightCapable();
-			}
 		}
 
 		/// <summary>
@@ -287,12 +275,6 @@ namespace OpenFlightVRC
 		public void FlightOff()
 		{
 			flightMode = FlightMode.Off;
-
-			// TODO Check whether it should even pop up here.
-			if (FP.notifications)
-			{
-				HudNotificationHandler.NotifyNotFlightCapable();
-			}
 		}
 
 		/// <summary>
@@ -312,11 +294,6 @@ namespace OpenFlightVRC
 			if (flightMode == FlightMode.Auto)
 			{
 				SwitchFlight(true);
-
-				if (FP.notifications)
-				{
-					HudNotificationHandler.NotifyFlightCapable();
-				}
 			}
 		}
 
@@ -328,11 +305,6 @@ namespace OpenFlightVRC
 			if (flightMode == FlightMode.Auto)
 			{
 				SwitchFlight(false);
-
-				if (FP.notifications)
-				{
-					HudNotificationHandler.NotifyNotFlightCapable();
-				}
 			}
 		}
 	}
