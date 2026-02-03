@@ -71,12 +71,7 @@ namespace OpenFlightVRC
 		/// It cycles from 0 to 99 at a rate of 50 ticks per second.
 		/// </summary>
 		private int timeTick = -1; // -1 until the player is valid, then this value cycles from 0-99 at 50 ticks per second
-		private Vector3 RHPos;
-		private Vector3 LHPos;
-		private Vector3 RHPosLast = Vector3.zero;
-		private Vector3 LHPosLast = Vector3.zero;
-		private Quaternion RHRot;
-		private Quaternion LHRot;
+
 
         /// <summary>
 		/// Determines whether the controllers are held outside of an imaginary cylinder.
@@ -87,35 +82,6 @@ namespace OpenFlightVRC
 		/// Indicates whether the hands are in opposite positions.
 		/// </summary>
 		private bool handsOpposite = false;
-
-		//[HideInInspector]
-		/// <summary> If true, the player is currently in the process of flapping. </summary>
-		//public bool isFlapping = false; // Doing the arm motion
-
-		//[FieldChangeCallback(nameof(isFlying))]
-		//private bool _isFlying = false;
-
-		//[HideInInspector]
-		/// <summary> If true, the player is currently flying. </summary>
-		//public bool isFlying // Currently in the air after/during a flap
-		//{
-		//	get { return _isFlying; }
-		//	set
-		//	{
-		//		if (value == _isFlying)
-		//		{
-		//			return;
-		//		}
-		//		_isFlying = value;
-
-				//forward the event to the AvatarContacts handler
-		//		FP.AviContact.OnFlyingChanged(_isFlying);
-		//	}
-		//}
-
-		//[HideInInspector]
-		/// <summary> If true, the player is currently gliding. </summary>
-		//public bool isGliding = false; // Has arms out while flying
 
 		/// <summary>
 		/// If >0, disables flight then decreases itself by one
@@ -138,10 +104,6 @@ namespace OpenFlightVRC
 
 		// Variables related to gliding
 		internal Vector3 wingDirection;
-		private float steering;
-		private bool spinningRightRound = false; // Can't get that Protogen animation out of my head
-		private float rotSpeed = 0;
-		private float rotSpeedGoal = 0;
 		private float glideDelay = 0; // Minus one per tick, upon hitting ten gliding will gradually come into effect. Zero means gliding functions fully
 
 		// "old" values are the world's defaults (recorded immediately before they are modified)
@@ -472,7 +434,6 @@ namespace OpenFlightVRC
 				else // Not in a gliding pose?
 				{
 					FP.isGliding = false;
-					rotSpeedGoal = 0;
 					glideDelay = 0;
 				}
 			}
@@ -671,9 +632,6 @@ Velocity: {8}",
             FP.isFlying = false;
             FP.isFlapping = false;
             FP.isGliding = false;
-            spinningRightRound = false;
-            rotSpeed = 0;
-            rotSpeedGoal = 0;
             LocalPlayer.SetGravityStrength(oldGravityStrength);
 
             if (!FP.allowLoco)
