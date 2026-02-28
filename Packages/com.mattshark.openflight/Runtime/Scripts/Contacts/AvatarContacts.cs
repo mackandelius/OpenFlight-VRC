@@ -101,21 +101,24 @@ namespace OpenFlightVRC.Contact
                                     break;
 
                                 case "OF_GlideControlMod":
-                                    float contactrotX = Math.Abs(contactInfo.contactSender.rotation.x - this.transform.rotation.x);
+                                    float contactrotX = Math.Abs(contactInfo.contactSender.rotation.eulerAngles.x - this.transform.rotation.eulerAngles.x);
+                                    Logger.Log("GlideControl Contact Sender Rotation X: " + contactInfo.contactSender.rotation.eulerAngles.x, this);
                                     float newglidecontrol = Mathf.Lerp(0.1f, 1.0f, contactrotX);
                                     FP.glideControl = newglidecontrol;
                                     Logger.Log("Glide control set to " + newglidecontrol.ToString() + " using contacts", this);
                                     break;
 
                                 case "OF_GravityMod":
-                                    float contactrotY = Math.Abs(contactInfo.contactSender.rotation.y - this.transform.rotation.y);
+                                    float contactrotY = Math.Abs(contactInfo.contactSender.rotation.eulerAngles.y - this.transform.rotation.eulerAngles.y);
+                                    Logger.Log("GlideControl Contact Sender Rotation X: " + contactInfo.contactSender.rotation.eulerAngles.x, this);
                                     float newgravity = Mathf.Lerp(1f, 5f, contactrotY);
                                     FP.flightGravityBase = newgravity;
                                     Logger.Log("Flight gravity set to " + newgravity.ToString() + " using contacts", this);
                                     break;
 
                                 case "OF_WeightMod":
-                                    float contactrotZ = Math.Abs(contactInfo.contactSender.rotation.z - this.transform.rotation.z);
+                                    float contactrotZ = Math.Abs(contactInfo.contactSender.rotation.eulerAngles.z - this.transform.rotation.eulerAngles.z);
+                                    Logger.Log("WeightMod Contact Sender Rotation Z: " + contactInfo.contactSender.rotation.eulerAngles.x, this);
                                     float newweight = Mathf.Lerp(0.1f, 10f, contactrotZ);
                                     FP.weight = newweight;
                                     Logger.Log("Weight set to " + newweight.ToString() + " using contacts", this);

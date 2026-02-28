@@ -102,9 +102,9 @@
                 float radianRotation = radians(_Rotation);
 
                 //Rotate Quad
-                //float2 currentXY = o.vertex.xy;
-                //o.vertex.x = (currentXY.x * cos(radianRotation)) - (currentXY.y * sin(radianRotation)); 
-                //o.vertex.y = (currentXY.y * cos(radianRotation)) + (currentXY.x * sin(radianRotation));
+                float2 currentXY = o.vertex.xy;
+                o.vertex.x = (currentXY.x * cos(radianRotation)) - (currentXY.y * sin(radianRotation)); 
+                o.vertex.y = (currentXY.y * cos(radianRotation)) + (currentXY.x * sin(radianRotation));
 
                 //Scale
                 o.vertex.xy *= _Scale;

@@ -2157,6 +2157,12 @@ PrefabInstance:
       propertyPath: _syncMethod
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2303749137223507112, guid: 83a1dcf8462378640b7615b3011c0c6f,
+        type: 3}
+      propertyPath: serializedProgramAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 199f4e7499364c94484dad4121bcb543,
+        type: 2}
     - target: {fileID: 2340682760287045380, guid: 83a1dcf8462378640b7615b3011c0c6f,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -3528,6 +3534,11 @@ PrefabInstance:
         type: 3}
       propertyPath: airFriction
       value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6111117273520572025, guid: 83a1dcf8462378640b7615b3011c0c6f,
+        type: 3}
+      propertyPath: notifications
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6111117273520572025, guid: 83a1dcf8462378640b7615b3011c0c6f,
         type: 3}
