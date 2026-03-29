@@ -1,7 +1,7 @@
 {
   "$schema": "./data_schema.json",
-  "JSON Version": "2.70.0",
-  "JSON Date": "2025-12-15",
+  "JSON Version": "2.72.0",
+  "JSON Date": "2026-03-09",
   "Contributers": [
     "ItsFloofy",
     "Daernaro",
@@ -45,7 +45,7 @@
     "BurnsToShine",
     "Mama_TeraByte",
     "Lane_the_Rex",
-    "LilianDoesHypno",
+    "ＶｉｘｅｎＤａｖａｌｉ",
     "Toys0125",
     "hantnor",
     "NeoSnivy",
@@ -70,7 +70,10 @@
     "Woffle Nibbler",
     "WebserferOwO",
     "Zeimyth",
-    "Fluxsynth"
+    "Fluxsynth",
+    "wordweaver1001",
+    "KUROPPER",
+    "Xavarius"
   ],
   "Bases": {
     "Kitavali": {
@@ -83,6 +86,16 @@
         ],
         "Weight": 1,
         "WingtipOffset": 6.6
+      },
+        "Weaver": {
+        "Name": "Kitachi",
+        "Creator": "Rai Kitamatsu/Rantis",
+        "Introducer": "wordweaver1001",
+        "Hash": [
+          "-1331949987v2"
+        ],
+        "Weight": 1,
+        "WingtipOffset": 0
       }
     },
     "Batdal": {
@@ -1873,7 +1886,7 @@
       "Original": {
         "Name": "リトゥーニャ",
         "Creator": "udon-cat-works",
-        "Introducer": "LilianDoesHypno",
+        "Introducer": "ＶｉｘｅｎＤａｖａｌｉ",
         "Hash": [
           "1787947624v2"
         ],
@@ -2150,6 +2163,36 @@
         "Hash": ["1914552374v2"],
         "Weight": 1,
         "WingtipOffset": 6.44
+      }
+    },
+    "Cync'vali": {
+      "Original": {
+        "Name": "Cync'vali",
+        "Creator": "Cynic",
+        "Introducer": "Xavarius",
+        "Hash": ["673820797v2"],
+        "Weight": 1,
+        "WingtipOffset": 2.14
+      }
+    },
+    "Sweater Bird": {
+      "Original": {
+      "Name": "Sweater Bird",
+      "Creator": "Crazium",
+      "Introducer": "KUROPPER",
+      "Hash": ["-489037540v2"],
+      "Weight": 1,
+      "WingtipOffset": 0
+      }
+    },
+    "Feathered Raptor": {
+      "Original": {
+      "Name": "Feathered Raptor",
+      "Creator": "CreatureTime",
+      "Introducer": "Xavarius",
+      "Hash": ["-713910226v2"],
+      "Weight": 1,
+      "WingtipOffset": 1.14
       }
     }
   }
