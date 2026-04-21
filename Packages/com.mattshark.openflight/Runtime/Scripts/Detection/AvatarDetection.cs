@@ -169,15 +169,6 @@ namespace OpenFlightVRC
 		}
 
 		/// <summary>
-		/// Update flight values at any arbitrary time without needing to run RunDetection()
-		/// </summary>
-		//public void UpdateProperties()
-		//{
-		//	flightProperties.wingtipOffset = WingtipOffset;
-		//	flightProperties.weight = weight;
-		//}
-
-		/// <summary>
 		/// Calculates the avatar scale using the distance from hips to spine.
 		/// </summary>
 		/// <param name="chest">The chest bone position</param>
@@ -206,9 +197,6 @@ namespace OpenFlightVRC
 
 			//we need a accurate avatar scale for the hash to work
 			d_spinetochest = CalculateAvatarScale(out Vector3 spine, out Vector3 chest);
-
-			//flightProperties.wingtipOffset = WingtipOffset;
-			//flightProperties.weight = weight;
 
 			//get all the bones
 			Vector3 head = _localPlayer.GetBonePosition(HumanBodyBones.Head);

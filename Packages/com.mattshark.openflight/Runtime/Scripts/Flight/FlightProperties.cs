@@ -200,13 +200,6 @@ namespace OpenFlightVRC
         [HideInInspector]
 		public float armspan = 1f;
 
-		//[Tooltip("Default avatar wingtipOffset. (Default: 0)")]
-        //public float wingtipOffset = 0;
-
-        //[Tooltip("Default avatar weight. (Default: 1)")]
-        //[Range(0f, 2f)]
-        //public float weight = 1.0f;
-
         // State Control Variables
         /// <summary>
         /// Cached reference to the local player. This is set in Start() and should not be modified.

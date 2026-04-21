@@ -122,23 +122,21 @@ namespace OpenFlightVRC.Contact
                                     Logger.Log("WeightMod Contact Sender Rotation Z: " + contactInfo.contactSender.rotation.eulerAngles.z, this);
                                     float newweight = Mathf.Lerp(0.1f, 10f, contactrotZ/90);
                                     AviDetect.weight = newweight;
-                                    //AviDetect.UpdateProperties();
                                     Logger.Log("Weight set to " + newweight.ToString() + " using contacts", this);
                                     break;
 
                                 case "OF_WingOffsetMod":
                                     //Tell system that the wing offset is being modified.
                                     float contactX = Math.Abs(contactInfo.contactSender.position.x - this.transform.position.x);
-                                    float newoffset = Mathf.Lerp(0, 40, contactX);
+                                    float newoffset = Mathf.Lerp(0.0f, 40.0f, contactX);
                                     AviDetect.WingtipOffset = newoffset;
-                                    //AviDetect.UpdateProperties();
                                     Logger.Log("Wingoffset set to " + newoffset.ToString() + " using contacts", this);
                                     break;
 
                                 case "OF_FlapStrengthMod":
                                     //Tell system that flap strength is being modified
                                     float contactY = Math.Abs(contactInfo.contactSender.position.y - this.transform.position.y);
-                                    int newstrength = (int)Mathf.Lerp(100, 800, contactY);
+                                    int newstrength = (int)Mathf.Lerp(100.0f, 800.0f, contactY);
                                     FP.flapStrengthBase = newstrength;
                                     Logger.Log("Flap strength set to " + newstrength.ToString() + " using contacts", this);
                                     break;

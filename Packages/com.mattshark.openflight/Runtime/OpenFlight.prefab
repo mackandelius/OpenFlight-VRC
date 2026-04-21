@@ -1001,7 +1001,7 @@ MonoBehaviour:
   debugOutput: {fileID: 0}
   bankingTurns: 1
   dynamicPlayerPhysics: 0
-  notifications: 1
+  notifications: 0
   AviContact: {fileID: 8421150603509121265}
   AviDetect: {fileID: 4190905665518863880}
   isGliding: 0
@@ -2057,7 +2057,7 @@ MonoBehaviour:
   OpenFlight: {fileID: 4190905665779482798}
   Sender: {fileID: 5130405854177166011}
   FP: {fileID: 6111117273520572025}
-  AviDetect: {fileID: 0}
+  AviDetect: {fileID: 4190905665518863880}
 --- !u!114 &2303749137223507112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2103,7 +2103,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
-  contentTypes: 1
+  contentTypes: -1
   collisionTags:
   - OF_CanFly
   - OF_CanNotFly

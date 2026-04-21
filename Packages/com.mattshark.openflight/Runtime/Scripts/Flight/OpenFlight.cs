@@ -242,10 +242,6 @@ namespace OpenFlightVRC
 			flightAllowed = _flightAllowed;
 
 			_localPlayer = Networking.LocalPlayer;
-			//if (!InVR())
-			//{
-			//	FlightOff();
-			//}
 
 			//apply flight mode
 			switch (flightMode)
