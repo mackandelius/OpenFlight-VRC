@@ -172,6 +172,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -189,6 +194,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -293,6 +308,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -310,6 +330,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -390,6 +420,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -407,6 +442,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -667,6 +712,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -684,6 +734,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -770,6 +830,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -787,6 +852,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -903,6 +978,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -920,6 +1000,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1036,6 +1126,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (78)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -1053,6 +1148,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1181,6 +1286,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -1198,6 +1308,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1272,6 +1392,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -1289,6 +1414,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1399,6 +1534,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -1416,6 +1556,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1562,6 +1712,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -1579,6 +1734,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1665,6 +1830,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -1682,6 +1852,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1841,6 +2021,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (74)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -1858,6 +2043,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1962,6 +2157,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -1979,6 +2179,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2047,6 +2257,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -2064,6 +2279,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2266,6 +2491,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -2283,6 +2513,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2369,6 +2609,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -2386,6 +2631,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2567,6 +2822,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -2584,6 +2844,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2834,6 +3104,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (80)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -2851,6 +3126,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5593,6 +5878,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -5610,6 +5900,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5690,6 +5990,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -5707,6 +6012,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5907,6 +6222,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -5924,6 +6244,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6028,6 +6358,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -6045,6 +6380,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6161,6 +6506,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -6178,6 +6528,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6252,6 +6612,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -6269,6 +6634,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6337,6 +6712,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -6354,6 +6734,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6428,6 +6818,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -6445,6 +6840,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6674,6 +7079,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -6691,6 +7101,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6895,6 +7315,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -6912,6 +7337,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6992,6 +7427,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -7009,6 +7449,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7077,6 +7527,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -7094,6 +7549,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7365,6 +7830,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -7382,6 +7852,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7474,6 +7954,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -7491,6 +7976,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7755,6 +8250,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -7772,6 +8272,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7870,6 +8380,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (77)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -7887,6 +8402,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8087,6 +8612,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -8104,6 +8634,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8190,6 +8730,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (81)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -8207,6 +8752,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8335,6 +8890,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -8352,6 +8912,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8687,6 +9257,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (73)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -8704,6 +9279,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8772,6 +9357,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -8789,6 +9379,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8887,6 +9487,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -8904,6 +9509,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8996,6 +9611,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -9013,6 +9633,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9195,6 +9825,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -9212,6 +9847,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9280,6 +9925,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -9297,6 +9947,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9562,6 +10222,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -9579,6 +10244,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9647,6 +10322,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -9664,6 +10344,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9972,6 +10662,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -9989,6 +10684,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10110,6 +10815,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -10127,6 +10837,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10591,6 +11311,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -10608,6 +11333,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10890,6 +11625,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -10907,6 +11647,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10975,6 +11725,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -10992,6 +11747,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11078,6 +11843,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -11095,6 +11865,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11529,6 +12309,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -11546,6 +12331,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11638,6 +12433,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -11655,6 +12455,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11807,6 +12617,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -11824,6 +12639,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11970,6 +12795,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -11987,6 +12817,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12490,6 +13330,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -12507,6 +13352,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12639,7 +13494,7 @@ PrefabInstance:
     - target: {fileID: 1055321711490392694, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
       propertyPath: blueprintId
-      value: wrld_fbcb2db6-49cd-48ef-86cf-b128f7362c1d
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1055321711490392694, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
@@ -17306,27 +18161,27 @@ PrefabInstance:
         type: 3}
       propertyPath: DynamicMaterials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: aabb29aed4263394fb007e1929862c35, type: 2}
+      objectReference: {fileID: 2100000, guid: 0923c77949c327045b5f8e90603d8950, type: 2}
     - target: {fileID: 6759095419728963412, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
       propertyPath: DynamicMaterials.Array.data[2]
       value: 
-      objectReference: {fileID: 2100000, guid: 0923c77949c327045b5f8e90603d8950, type: 2}
+      objectReference: {fileID: 2100000, guid: 1c987494452b85f4ab4cac3322415907, type: 2}
     - target: {fileID: 6759095419728963412, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
       propertyPath: DynamicMaterials.Array.data[3]
       value: 
-      objectReference: {fileID: 2100000, guid: 1c987494452b85f4ab4cac3322415907, type: 2}
+      objectReference: {fileID: 2100000, guid: aabb29aed4263394fb007e1929862c35, type: 2}
     - target: {fileID: 6759095419728963412, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
       propertyPath: DynamicMaterials.Array.data[4]
       value: 
-      objectReference: {fileID: 2100000, guid: c2ccc285a7ce18c4c9f486b4bd981b7d, type: 2}
+      objectReference: {fileID: 2100000, guid: 6893c0039b0c67341a4b7c132bf557a4, type: 2}
     - target: {fileID: 6759095419728963412, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
       propertyPath: DynamicMaterials.Array.data[5]
       value: 
-      objectReference: {fileID: 2100000, guid: 6893c0039b0c67341a4b7c132bf557a4, type: 2}
+      objectReference: {fileID: 2100000, guid: c2ccc285a7ce18c4c9f486b4bd981b7d, type: 2}
     - target: {fileID: 6759095419728963412, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
       propertyPath: DynamicMaterials.Array.data[6]
@@ -28413,6 +29268,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -28430,6 +29290,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28498,6 +29368,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -28515,6 +29390,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28761,6 +29646,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -28778,6 +29668,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28852,6 +29752,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -28869,6 +29774,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28991,6 +29906,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -29008,6 +29928,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29106,6 +30036,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -29123,6 +30058,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29197,6 +30142,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (79)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -29214,6 +30164,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29306,6 +30266,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -29323,6 +30288,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29421,6 +30396,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -29438,6 +30418,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29524,6 +30514,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -29541,6 +30536,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29723,6 +30728,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -29740,6 +30750,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29832,6 +30852,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -29849,6 +30874,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29935,6 +30970,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -29952,6 +30992,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30074,6 +31124,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -30091,6 +31146,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30201,6 +31266,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -30218,6 +31288,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30286,6 +31366,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -30303,6 +31388,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30389,6 +31484,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -30406,6 +31506,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30498,6 +31608,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -30515,6 +31630,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30583,6 +31708,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -30600,6 +31730,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30762,6 +31902,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -30779,6 +31924,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30889,6 +32044,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -30906,6 +32066,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35880,6 +37050,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -35897,6 +37072,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35977,6 +37162,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -35994,6 +37184,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -36062,6 +37262,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (71)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -36079,6 +37284,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -36171,6 +37386,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerInfo (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 397161130939867019, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1200833383092323075, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: _syncMethod
@@ -36188,6 +37408,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4548817697373630809, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
+    - target: {fileID: 5022996504097398289, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222100670322822959, guid: c3e16ceaf4929fe4cbed69e31989189c,
+        type: 3}
+      propertyPath: m_AllowRoll
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543970633264748802, guid: c3e16ceaf4929fe4cbed69e31989189c,
         type: 3}
       propertyPath: m_LocalPosition.x
