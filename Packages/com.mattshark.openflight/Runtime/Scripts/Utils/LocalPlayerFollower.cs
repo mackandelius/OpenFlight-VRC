@@ -7,6 +7,7 @@ using VRC.Udon;
 public class LocalPlayerFollower : UdonSharpBehaviour
 {
     public Transform Target;
+    private VRCPlayerApi player;
 
     public void Start()
     {
@@ -14,10 +15,12 @@ public class LocalPlayerFollower : UdonSharpBehaviour
         {
             Target = transform;
         }
+
+        player = Networking.LocalPlayer;
     }
     public override void PostLateUpdate()
     {
-        Target.position = Networking.LocalPlayer.GetPosition();
-        Target.rotation = Networking.LocalPlayer.GetRotation();
+        Target.position = player.GetPosition();
+        Target.rotation = player.GetRotation();
     }
 }

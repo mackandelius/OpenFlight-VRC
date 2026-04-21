@@ -9163,7 +9163,7 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 5190688136465432780}
   _logProxy: {fileID: 0}
   target: {fileID: 6124323177588583349}
-  targetVariable: WingtipOffset
+  targetVariable: wingtipOffset
 --- !u!114 &5190688136465432780
 MonoBehaviour:
   m_ObjectHideFlags: 0

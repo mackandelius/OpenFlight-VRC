@@ -40,21 +40,27 @@ MonoBehaviour:
       position: {x: 361, y: 259}
       nodeUIDs:
       - 
+      - 
       flowUIDs:
       - d84117ee-d766-4871-9921-8bab6f150e52
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|RandomizeGravity
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     - fullName: Event_Custom
       uid: cfeb9c2e-57cb-4ea0-b0bd-5dfcfbbf6941
       position: {x: 372, y: 588.36}
       nodeUIDs:
+      - 
       - 
       flowUIDs:
       - cff2b4d7-9f3e-4db1-800e-8eee32609c95
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|RandomizeMove
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     - fullName: VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi
       uid: 584e13e3-6c50-49bc-9e79-95eeb624e06b
       position: {x: 388.8501, y: 356.30002}
