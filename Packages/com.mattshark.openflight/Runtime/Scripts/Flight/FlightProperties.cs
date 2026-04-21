@@ -160,8 +160,13 @@ namespace OpenFlightVRC
         /// </summary>
         [Tooltip("Has to link to the correct contact udon behavior for contact detection and sending to work.")]
         public Contact.AvatarContacts AviContact;
+
+        /// <summary>
+        /// Udon behavior detecting which avatar is used, also holds the values for weight and wingtipoffset.
+        /// </summary>
+        public AvatarDetection AviDetect;
 		#endregion
-		#endregion
+        #endregion
 
         [FieldChangeCallback(nameof(isFlying))]
 		private bool _isFlying = false;
@@ -195,12 +200,12 @@ namespace OpenFlightVRC
         [HideInInspector]
 		public float armspan = 1f;
 
-		[Tooltip("Default avatar wingtipOffset. (Default: 0)")]
-		public float wingtipOffset = 0;
+		//[Tooltip("Default avatar wingtipOffset. (Default: 0)")]
+        //public float wingtipOffset = 0;
 
-        [Tooltip("Default avatar weight. (Default: 1)")]
-        [Range(0f, 2f)]
-        public float weight = 1.0f;
+        //[Tooltip("Default avatar weight. (Default: 1)")]
+        //[Range(0f, 2f)]
+        //public float weight = 1.0f;
 
         // State Control Variables
         /// <summary>
@@ -263,7 +268,7 @@ namespace OpenFlightVRC
 
         internal float GetFlapStrength()
 		{
-			float flapStrengthMod = useAvatarModifiers ? wingtipOffset * 8 : 10;
+			float flapStrengthMod = useAvatarModifiers ? AviDetect.WingtipOffset * 8 : 10;
 
 			return sizeCurve.Evaluate(GetArmspanValue()) * (flapStrengthBase + flapStrengthMod);
 		}
@@ -287,7 +292,7 @@ namespace OpenFlightVRC
 			if (useAvatarModifiers)
 			{
 				// default settings
-				return gravity * weight;
+				return gravity * AviDetect.weight;
 			}
 			return gravity;
 		}
@@ -308,7 +313,7 @@ namespace OpenFlightVRC
             defaultsStore.SetValue((DataToken)nameof(requireJump), requireJump);
             defaultsStore.SetValue((DataToken)nameof(allowLoco), allowLoco);
             defaultsStore.SetValue((DataToken)nameof(useAvatarModifiers), useAvatarModifiers);
-            defaultsStore.SetValue((DataToken)nameof(wingtipOffset), wingtipOffset);
+            //defaultsStore.SetValue((DataToken)nameof(wingtipOffset), wingtipOffset);
             defaultsStore.SetValue((DataToken)nameof(canGlide), canGlide);
             defaultsStore.SetValue((DataToken)nameof(fallToGlide), fallToGlide);
             defaultsStore.SetValue((DataToken)nameof(horizontalStrengthMod), horizontalStrengthMod);
@@ -332,7 +337,7 @@ namespace OpenFlightVRC
             requireJump = GetDefaultValue(nameof(requireJump)).Boolean;
             allowLoco = GetDefaultValue(nameof(allowLoco)).Boolean;
             useAvatarModifiers = GetDefaultValue(nameof(useAvatarModifiers)).Boolean;
-            wingtipOffset = GetDefaultValue(nameof(wingtipOffset)).Float;
+            //wingtipOffset = GetDefaultValue(nameof(wingtipOffset)).Float;
             canGlide = GetDefaultValue(nameof(canGlide)).Boolean;
             fallToGlide = GetDefaultValue(nameof(fallToGlide)).Boolean;
             horizontalStrengthMod = GetDefaultValue(nameof(horizontalStrengthMod)).Float;

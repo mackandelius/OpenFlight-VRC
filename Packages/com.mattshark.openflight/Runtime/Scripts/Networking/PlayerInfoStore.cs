@@ -5,6 +5,9 @@
 using OpenFlightVRC.Effects;
 using OpenFlightVRC.UI;
 using UdonSharp;
+
+using UnityEngine;
+
 using VRC.SDKBase;
 
 namespace OpenFlightVRC.Net
@@ -175,7 +178,7 @@ namespace OpenFlightVRC.Net
 				//IsFlapping = wingFlightPlusGlide.isFlapping;
 				//IsContributer = contributerDetection.localPlayerIsContributer;
 				PackedData = Util.BitPackBool(flightProperties.isFlying, flightProperties.isFlapping, ContributerDetection.localPlayerIsContributer);
-				WorldWingtipOffset = flightProperties.wingtipOffset * (float)AvatarDetection.d_spinetochest;
+				WorldWingtipOffset = AvatarDetection.WingtipOffset * (float)AvatarDetection.d_spinetochest;
 			}
 		}
 

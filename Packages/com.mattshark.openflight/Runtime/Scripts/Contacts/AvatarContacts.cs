@@ -23,6 +23,7 @@ namespace OpenFlightVRC.Contact
 
         public FlightProperties FP;
 
+        public AvatarDetection AviDetect;
         private VRCPlayerApi Localplayer;
 
 
@@ -120,7 +121,8 @@ namespace OpenFlightVRC.Contact
                                     float contactrotZ = Math.Abs(contactInfo.contactSender.rotation.eulerAngles.z - this.transform.rotation.eulerAngles.z) + 0.0001f;
                                     Logger.Log("WeightMod Contact Sender Rotation Z: " + contactInfo.contactSender.rotation.eulerAngles.z, this);
                                     float newweight = Mathf.Lerp(0.1f, 10f, contactrotZ/90);
-                                    FP.weight = newweight;
+                                    AviDetect.weight = newweight;
+                                    //AviDetect.UpdateProperties();
                                     Logger.Log("Weight set to " + newweight.ToString() + " using contacts", this);
                                     break;
 
@@ -128,7 +130,8 @@ namespace OpenFlightVRC.Contact
                                     //Tell system that the wing offset is being modified.
                                     float contactX = Math.Abs(contactInfo.contactSender.position.x - this.transform.position.x);
                                     float newoffset = Mathf.Lerp(0, 40, contactX);
-                                    FP.wingtipOffset = newoffset;
+                                    AviDetect.WingtipOffset = newoffset;
+                                    //AviDetect.UpdateProperties();
                                     Logger.Log("Wingoffset set to " + newoffset.ToString() + " using contacts", this);
                                     break;
 

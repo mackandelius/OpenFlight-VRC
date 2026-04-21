@@ -7,6 +7,7 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.SDK3.Data;
 using static OpenFlightVRC.Util;
+using BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC;
 
 namespace OpenFlightVRC
 {
@@ -69,7 +70,7 @@ namespace OpenFlightVRC
 		/// </summary>
 		public OpenFlight OpenFlight;
 		/// <summary>
-		/// The WingFlightPlusGlide script, needed to set the flight properties
+		/// The FlightProperties script, needed to set the flight properties
 		/// </summary>
 		public FlightProperties flightProperties;
 		#endregion
@@ -101,11 +102,13 @@ namespace OpenFlightVRC
 		[ReadOnlyInspector]
 		public string hash = "0";
 		internal float[] HashDistances = new float[5];
+
 		/// <summary>
 		/// The weight of the currently worn avatar
 		/// </summary>
 		[ReadOnlyInspector]
 		public float weight = 1;
+
 		/// <summary>
 		/// The offset of the wing tip for the current avatar
 		/// </summary>
@@ -166,6 +169,15 @@ namespace OpenFlightVRC
 		}
 
 		/// <summary>
+		/// Update flight values at any arbitrary time without needing to run RunDetection()
+		/// </summary>
+		//public void UpdateProperties()
+		//{
+		//	flightProperties.wingtipOffset = WingtipOffset;
+		//	flightProperties.weight = weight;
+		//}
+
+		/// <summary>
 		/// Calculates the avatar scale using the distance from hips to spine.
 		/// </summary>
 		/// <param name="chest">The chest bone position</param>
@@ -195,8 +207,8 @@ namespace OpenFlightVRC
 			//we need a accurate avatar scale for the hash to work
 			d_spinetochest = CalculateAvatarScale(out Vector3 spine, out Vector3 chest);
 
-			flightProperties.wingtipOffset = WingtipOffset;
-			flightProperties.weight = weight;
+			//flightProperties.wingtipOffset = WingtipOffset;
+			//flightProperties.weight = weight;
 
 			//get all the bones
 			Vector3 head = _localPlayer.GetBonePosition(HumanBodyBones.Head);
@@ -233,8 +245,8 @@ namespace OpenFlightVRC
 				else
 				{
 					OpenFlight.CannotFly();
-					flightProperties.wingtipOffset = 0;
-					flightProperties.weight = 1;
+					WingtipOffset = 0;
+					weight = 1;
 					Logger.Log("Avatar is not allowed to fly!", this);
 				}
 			}
